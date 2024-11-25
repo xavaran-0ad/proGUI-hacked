@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<object name="TeamSummary"
+	size="0% 0% 100% 100%"
+	type="button"
+	sprite="stretched:session/gradiant.png"
+	hidden="true"
+	z="200"
+>
+	<repeat count="5" var="n">
+		<object name="TeamSummaryTeam[n]" hidden="false">
+			<object name="TeamSummaryTeam[n]_name" size="-2 24 245 50" text_align="center"
+				type="text"
+				hidden="false" z="220" />
+			<repeat count="9" var="x">
+				<object name="TeamSummaryPlayer[n][x]" size="10 0 230 470" type="image"
+					hidden="true" z="210">
+					<object name="TeamSummaryPlayer[n][x]_name" size="40 60 190 40" type="text"
+						hidden="false" z="250" />
+					<object name="TeamSummaryPlayer[n][x]_civIcon" size="10 60 40 40" type="button"
+						hidden="false" z="250" ghost="true" />
+					<object name="TeamSummaryPlayer[n][x]_civIconBG" size="10 60 40 40"
+						type="button"
+						hidden="false" z="249" />
+				</object>
+			</repeat>
+		</object>
+	</repeat>
+
+	<object name="CloseTeamSummary" size="30% 540 70% 600" type="button"
+		style="StoneButton"
+		hidden="false" z="260" />
+	<object name="CloseTeamSummaryMessage" size="30% 540 70% 600" type="text"
+		hidden="false" ghost="true" z="261" />
+	<object name="AbortQuickStart" size="40% 610 60% 640" type="button"
+		style="StoneButton"
+		hidden="true" z="260" />
+	<object name="AbortQuickStartText" size="40% 610 60% 640" type="text" text_align="center"
+		text_valign="center"
+		hidden="true" ghost="true" z="261" />
+</object>

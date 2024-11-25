@@ -1,0 +1,1020 @@
+[
+	{
+		"label": "boonGUI",
+		"options": [
+			{
+				"type": "dropdown",
+				"label": "[color=\"220 185 70\"]Scroll[/color] speed",
+				"tooltip": "Set the speed at which you move across the map.[color=\"255 0 0\"]\nRESTART NECESSARY\nThis value is kept even if you disable the boonGUI mod.[/color]",
+				"config": "view.scroll.speed",
+				"list": [
+					{
+						"value": "50.0",
+						"label": "50 - Slower"
+					},
+					{
+						"value": "80.0",
+						"label": "80 - Slow"
+					},
+					{
+						"value": "120.0",
+						"label": "[color=\"220 185 70\"]120 - Default[/color]"
+					},
+					{
+						"value": "180.0",
+						"label": "180 - Fast"
+					},
+					{
+						"value": "250.0",
+						"label": "250 - Faster"
+					},
+					{
+						"value": "350.0",
+						"label": "350 - Ultra Fast"
+					}
+				]
+			},
+			{
+				"type": "dropdown",
+				"label": "[color=\"220 185 70\"]Rotation[/color] speed: Horizontal",
+				"tooltip": "Set the speed at which you rotate left/right.[color=\"255 0 0\"]\nRESTART NECESSARY\nThis value is kept even if you disable the boonGUI mod.[/color]",
+				"config": "view.rotate.x.speed",
+				"list": [
+					{
+						"value": "0.5",
+						"label": "0.5 - Slower"
+					},
+					{
+						"value": "0.8",
+						"label": "0.8 - Slow"
+					},
+					{
+						"value": "1.2",
+						"label": "[color=\"220 185 70\"]1.2 - Default[/color]"
+					},
+					{
+						"value": "1.8",
+						"label": "1.8 - Fast"
+					},
+					{
+						"value": "2.5",
+						"label": "2.5 - Faster"
+					},
+					{
+						"value": "3.5",
+						"label": "3.5 - Ultra Fast"
+					}
+				]
+			},
+			{
+				"type": "dropdown",
+				"label": "[color=\"220 185 70\"]Rotation[/color] speed: Vertical",
+				"tooltip": "Set the speed at which you rotate up/down.[color=\"255 0 0\"]\nRESTART NECESSARY\nThis value is kept even if you disable the boonGUI mod.[/color]",
+				"config": "view.rotate.y.speed",
+				"list": [
+					{
+						"value": "1.1",
+						"label": "1.1 - Slower"
+					},
+					{
+						"value": "1.8",
+						"label": "1.8 - Slow"
+					},
+					{
+						"value": "2.0",
+						"label": "[color=\"220 185 70\"]2 - Default[/color]"
+					},
+					{
+						"value": "4.1",
+						"label": "3.9 - Fast"
+					},
+					{
+						"value": "5.8",
+						"label": "5.8 - Faster"
+					},
+					{
+						"value": "8.2",
+						"label": "8.2 - Ultra Fast"
+					}
+				]
+			},
+			{
+				"type": "dropdown",
+				"label": "[color=\"220 185 70\"]Zoom[/color] speed: Hotkey",
+				"tooltip": "Set the speed at which you zoom in/out with your hotkeys.[color=\"255 0 0\"]\nRESTART NECESSARY\nThis value is kept even if you disable the boonGUI mod.[/color]",
+				"config": "view.zoom.speed",
+				"list": [
+					{
+						"value": "150.0",
+						"label": "150 - Slower"
+					},
+					{
+						"value": "200.0",
+						"label": "200 - Slow"
+					},
+					{
+						"value": "256.0",
+						"label": "[color=\"220 185 70\"]256 - Default[/color]"
+					},
+					{
+						"value": "350.0",
+						"label": "350 - Fast"
+					},
+					{
+						"value": "500.0",
+						"label": "500 - Faster"
+					},
+					{
+						"value": "650.0",
+						"label": "650 - Ultra Fast"
+					}
+				]
+			},
+			{
+				"type": "dropdown",
+				"label": "[color=\"220 185 70\"]Zoom[/color] speed: Mouse wheel",
+				"tooltip": "Set the speed at which you zoom in/out with your mouse wheel.[color=\"255 0 0\"]\nRESTART NECESSARY\nThis value is kept even if you disable the boonGUI mod.[/color]",
+				"config": "view.zoom.speed.wheel",
+				"list": [
+					{
+						"value": "15.0",
+						"label": "15 - Slower"
+					},
+					{
+						"value": "25.0",
+						"label": "25 - Slow"
+					},
+					{
+						"value": "32.0",
+						"label": "[color=\"220 185 70\"]32 - Default[/color]"
+					},
+					{
+						"value": "50.0",
+						"label": "50 - Fast"
+					},
+					{
+						"value": "75.0",
+						"label": "75 - Faster"
+					},
+					{
+						"value": "100.0",
+						"label": "100 - Ultra Fast"
+					}
+				]
+			},
+			{
+				"type": "dropdown",
+				"label": "[color=\"220 185 70\"]Zoom[/color] out distance",
+				"tooltip": "Set how far you can zoom out.[color=\"255 0 0\"]\nRESTART NECESSARY\nThis value is kept even if you disable the boonGUI mod.[/color]",
+				"config": "view.zoom.max",
+				"list": [
+					{
+						"value": "200.0",
+						"label": "[color=\"220 185 70\"]200 - Default[/color]"
+					},
+					{
+						"value": "300.0",
+						"label": "300 - Far"
+					},
+					{
+						"value": "400.0",
+						"label": "400 - Further"
+					}
+				]
+			},
+			{
+				"type": "dropdown",
+				"label": "[color=\"220 185 70\"]Zoom[/color] in distance",
+				"tooltip": "Set how close you can zoom in.[color=\"255 0 0\"]\nRESTART NECESSARY\nThis value is kept even if you disable the boonGUI mod.[/color]",
+				"config": "view.zoom.min",
+				"list": [
+					{
+						"value": "10.0",
+						"label": "10 - Closer"
+					},
+					{
+						"value": "30.0",
+						"label": "30 - Close"
+					},
+					{
+						"value": "50.0",
+						"label": "[color=\"220 185 70\"]50 - Default[/color]"
+					}
+				]
+			},
+			{
+				"type": "dropdown",
+				"label": "[color=\"220 185 70\"]Windowed mode[/color] screen width",
+				"tooltip": "Screen width in windowed mode.[color=\"255 0 0\"]\nRESTART NECESSARY\nThis value is kept even if you disable the boonGUI mod.[/color][color=\"220 185 70\"]",
+				"config": "xres",
+				"list": [
+					{
+						"value": "1024",
+						"label": "[color=\"220 185 70\"]1024 - Default[/color]"
+					},
+					{
+						"value": "1280",
+						"label": "1280"
+					},
+					{
+						"value": "1440",
+						"label": "1440"
+					}
+				]
+			},
+			{
+				"type": "dropdown",
+				"label": "[color=\"220 185 70\"]Windowed mode[/color] screen height",
+				"tooltip": "Screen height in windowed mode.[color=\"255 0 0\"]\nRESTART NECESSARY\nThis value is kept even if you disable the boonGUI mod.[/color][color=\"220 185 70\"]",
+				"config": "yres",
+				"list": [
+					{
+						"value": "768",
+						"label": "[color=\"220 185 70\"]768 - Default[/color]"
+					},
+					{
+						"value": "800",
+						"label": "800"
+					},
+					{
+						"value": "900",
+						"label": "900"
+					}
+				]
+			},
+			{
+				"type": "boolean",
+				"label": "[color=\"220 185 70\"]Top Panel[/color] Display time duration of replays",
+				"tooltip": "Decide if you want to see the time duration of the replay above the top panel. ",
+				"config": "boongui.showduration"
+			},
+			{
+				"type": "dropdown",
+				"label": "[color=\"220 185 70\"]Top Panel[/color] Gatheres or Income/10s",
+				"tooltip": "Specify what to display next to the resource count.\n\n[color=\"220 185 70\"]Gatherers:[/color] Total number of units that are gathering and on their way to gather this resource.\n[color=\"220 185 70\"]Income/10s:[/color] Total number of resources income over 10 seconds.",
+				"config": "boongui.toppanel.resourceGatherersRates",
+				"list": [
+					{
+						"value": "Gatherers",
+						"label": "[color=\"220 185 70\"]Gatherers - Default[/color]"
+					},
+					{
+						"value": "Rates",
+						"label": "Income/10s"
+					}
+				]
+			},
+			{
+				"type": "slider",
+				"label": "[color=\"220 185 70\"]Top Panel[/color] row color intensity",
+				"tooltip": "Choose the color intensity for the rows.",
+				"config": "boongui.toppanel.coloredPlayerStatsBackground",
+				"min": 5,
+				"max": 50
+			}
+		]
+	},
+	{
+		"label": "GUI customization",
+		"options": [
+			{
+				"type": "dropdown",
+				"label": "[color=\"220 185 70\"]Right Panel[/color] Boon/Pro GUI when Playing",
+				"tooltip": "Select bewteen ProGUI and BoonGUI",
+				"config": "progui.ProOrBoon",
+				"list": [
+					{
+						"value": "Pro",
+						"label": "ProGUI"
+					},
+					{
+						"value": "Boon",
+						"label": "BoonGUI"
+					},
+					{
+						"value": "None",
+						"label": "None"
+					}
+				]
+			},
+			{
+				"type": "dropdown",
+				"label": "[color=\"220 185 70\"]Right Panel[/color] Boon/Pro GUI when Spectating",
+				"tooltip": "Select bewteen ProGUI and BoonGUI",
+				"config": "progui.ProOrBoonObs",
+				"list": [
+					{
+						"value": "Pro",
+						"label": "ProGUI"
+					},
+					{
+						"value": "Boon",
+						"label": "BoonGUI"
+					},
+					{
+						"value": "None",
+						"label": "None"
+					}
+				]
+			},
+			{
+				"type": "boolean",
+				"label": "[color=\"220 185 70\"]Match Briefing[/color] Teams Recap",
+				"tooltip": "Display a team recap when game starts",
+				"config": "boongui.teamBriefing"
+			},
+			{
+				"type": "boolean",
+				"label": "[color=\"220 185 70\"]Match Briefing[/color] Hide GUI",
+				"tooltip": "Hide the GUI unil team recap is closed",
+				"config": "boongui.teamBriefing.hideGUI",
+				"dependencies": [
+					"boongui.teamBriefing"
+				]
+			},
+			{
+				"type": "boolean",
+				"label": "[color=\"220 185 70\"]Right Panel[/color] Play sound when new units are idles",
+				"tooltip": "Check if you want a sound to play when there are new idles",
+				"config": "boongui.playSoundWhenIdles"
+			},
+			{
+				"type": "boolean",
+				"label": "[color=\"220 185 70\"]Right Panel[/color] Play sound when new units are idles buildings",
+				"tooltip": "Check if you want a sound to play when there are new idles buildings",
+				"config": "boongui.playSoundWhenIdlesBuildings"
+			},
+			{
+				"type": "boolean",
+				"label": "[color=\"220 185 70\"]Top Panel [/color] Hide Allies Stats[color=\"220 25 25\"] Need Restart [/color]",
+				"tooltip": "Will hide allies stats when on. You can also assign and use the hotkey: BoonGUI hide allies Stats",
+				"config": "boongui.hideAlliesStats"
+			},
+			{
+				"type": "boolean",
+				"label": "[color=\"220 185 70\"]Top Panel[/color] KDr animation",
+				"tooltip": "Check if you want a animation for short-therm kdr in the top panel for all players.",
+				"config": "boongui.topPanel.animateKD"
+			},
+			{
+				"type": "boolean",
+				"label": "[color=\"220 185 70\"]Minimap [/color] Stat bars near minimap [color=\"220 25 25\"] Need Restart [/color]",
+				"tooltip": "Check if you want a animation for short-therm kdr next to minimap for viewed player.",
+				"config": "boongui.minimap.ShowStatsBars"
+			},
+			{
+				"type": "slider",
+				"label": "[color=\"220 185 70\"]Right Panel[/color] size idle workers row [color=\"220 25 25\"] Restart [/color]",
+				"tooltip": "Set the size of the Icon for idles",
+				"config": "boongui.controlPanel.rowSize.1",
+				"min": 0.5,
+				"max": 1
+			},
+			{
+				"type": "slider",
+				"label": "[color=\"220 185 70\"]Right Panel[/color] size idle buildings row [color=\"220 25 25\"] Restart [/color]",
+				"tooltip": "Set the size of the Icon for idles",
+				"config": "boongui.controlPanel.rowSize.2",
+				"min": 0.5,
+				"max": 1
+			},
+			{
+				"type": "boolean",
+				"label": "[color=\"220 185 70\"]Right Panel[/color] Show EcoPanels [color=\"220 25 25\"] Need Restart [/color]",
+				"tooltip": "Show and enable ProGUI eco panels, small performance gain when disabled",
+				"config": "progui.helpers.enable"
+			},
+			{
+				"type": "boolean",
+				"label": "[color=\"220 185 70\"]Trainer[/color] Hide TrainerPanel when turned off",
+				"tooltip": "Check if you want to hide trainer tab when it's off",
+				"config": "boongui.controlPanel.hideTabsWhenOff",
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			},
+			{
+				"type": "dropdown",
+				"label": "[color=\"220 185 70\"]Right Panel[/color] Theme Color [color=\"220 25 25\"] Need Restart [/color]",
+				"tooltip": "Change the color of the buttons when toggled.",
+				"config": "boongui.rightPanel.color",
+				"list": [
+					{
+						"value": "red",
+						"label": "[color=\"220 25 25\"] red [/color]"
+					},
+					{
+						"value": "blue",
+						"label": "[color=\"210 210 255\"] light blue [/color]"
+					},
+					{
+						"value": "darkblue",
+						"label": "[color=\"125 120 225\"] dark blue [/color][color=\"220 185 70\"] <!> Bad [/color]"
+					}
+				],
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			},
+			{
+				"type": "boolean",
+				"label": "[color=\"220 185 70\"]Right Panel[/color] Stacked sub-Menus [color=\"220 25 25\"] Need Restart [/color]",
+				"tooltip": "Check if you want all sub-menus to show on the right panel, can be confusing if you don't know what are they associated to",
+				"config": "boongui.controlPanel.showAllMenus",
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			},
+			{
+				"type": "string",
+				"label": "[color=\"220 185 70\"]Top Panel Settings[/color] Message requesting help",
+				"tooltip": "Will send: this message + Resource clicked, in chat.",
+				"config": "boongui.topPanel.tributeMessage"
+			}
+		]
+	},
+	{
+		"label": "proGUI Trainer",
+		"options": [
+			{
+				"type": "boolean",
+				"label": "[color=\"220 185 70\"]Trainer[/color] Hide TrainerPanel when truned off",
+				"tooltip": "Check if you want to hide trainer tab when it's off",
+				"config": "boongui.controlPanel.hideTabsWhenOff",
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			},
+			{
+				"type": "slider",
+				"label": "[color=\"220 185 70\"]Trainer[/color] max units per batch ",
+				"tooltip": "Set the maximum number of units trainable in a single batch",
+				"config": "boongui.trainer.MaxBatchSize",
+				"min": 1,
+				"max": 100,
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			},
+			{
+				"type": "slider",
+				"label": "[color=\"220 185 70\"]Trainer[/color] food reserve",
+				"tooltip": "Unit training won't consume food below this reserve",
+				"config": "boongui.trainer.foodReserve",
+				"min": 0,
+				"max": 1000,
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			},
+			{
+				"type": "slider",
+				"label": "[color=\"220 185 70\"]Trainer[/color] wood reserve",
+				"tooltip": "Unit training won't consume wood below this reserve",
+				"config": "boongui.trainer.woodReserve",
+				"min": 0,
+				"max": 1000,
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			},
+			{
+				"type": "slider",
+				"label": "[color=\"220 185 70\"]Trainer[/color] stone reserve",
+				"tooltip": "Unit training won't consume stone below this reserve",
+				"config": "boongui.trainer.stoneReserve",
+				"min": 0,
+				"max": 1000,
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			},
+			{
+				"type": "slider",
+				"label": "[color=\"220 185 70\"]Trainer[/color] metal reserve",
+				"tooltip": "Unit training won't consume metal below this reserve",
+				"config": "boongui.trainer.metalReserve",
+				"min": 0,
+				"max": 1000,
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			},
+			{
+				"type": "dropdown",
+				"label": "[color=\"220 185 70\"]Trainer GamePlay Mode[/color][color=\"100 135 225\"] Queue [/color]or [color=\"100 135 225\"]Compo[/color]",
+				"tooltip": "Compo mode changes to Trainer Panel: When activating or desactivating a unit for the trainer, don't forget the value. Will also start a game with preset 50% inf 50% ranged. Recommanded for advanced users.",
+				"config": "boongui.trainer.toogleResetToZero",
+				"list": [
+					{
+						"value": "true",
+						"label": "[color=\"100 135 225\"] Queue [/color]"
+					},
+					{
+						"value": "false",
+						"label": "[color=\"100 135 225\"] Compo [/color]"
+					}
+				],
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			},
+			{
+				"type": "boolean",
+				"label": "[color=\"220 185 70\"]Trainer[/color] Train weaker units first (reverse priority order)",
+				"tooltip": "Check if you want, for example, females to train over cavalry if both are toggled in the Training Tab",
+				"config": "boongui.trainer.reversePriority",
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			},
+			{
+				"type": "boolean",
+				"label": "[color=\"220 185 70\"]Trainer[/color] Strict Composition [color=\"220 25 25\"]May result in idle buildings[/color]",
+				"tooltip": "'Hard Limit' Will stop training any units if it's already over composition (Ex: Stables stay idles if cav is trained over target) ",
+				"config": "boongui.trainer.strictCompo",
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			},
+			{
+				"type": "slider",
+				"label": "[color=\"220 185 70\"]Trainer[/color] allocation Increment (Scroll)",
+				"tooltip": "'scroll speed' Set the incrementation size when changing trainer allocation (with mouse wheel)",
+				"config": "boongui.trainer.increment",
+				"min": 1,
+				"max": 20,
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			},
+			{
+				"type": "slider",
+				"label": "[color=\"220 185 70\"]NextPhase[/color] Push Order front",
+				"tooltip": "If the current production has a time remaining over this time, order will be pushed to front (in ms, 1000 = 1sec)",
+				"config": "boongui.barter.pushOrderIfFrontTimeRemaining",
+				"min": 1000,
+				"max": 30000,
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			},
+			{
+				"type": "string",
+				"label": "[color=\"220 185 70\"]Trainer[/color] Buildings",
+				"tooltip": "Classes of buildings that are used by the trainer",
+				"config": "boongui.trainer.trainerClasses",
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			},
+			{
+				"type": "boolean",
+				"label": "[color=\"220 185 70\"]Trainer[/color] Enable Corral Production [color=\"220 25 25\"] Need Restart [/color]",
+				"tooltip": "Produce Animals from Corrals",
+				"config": "boongui.trainer.enableCorral",
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			},
+			{
+				"type": "slider",
+				"label": "[color=\"220 185 70\"]Trainer[/color] Corral MaxBatch",
+				"tooltip": "Max units to train in corrals",
+				"config": "boongui.trainer.corralBatchSize",
+				"min": 1,
+				"max": 10,
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			}
+		]
+	},
+	{
+		"label": "proGUI EcoPanels",
+		"options": [
+			{
+				"type": "slider",
+				"label": "[color=\"220 185 70\"]Auto-Tribute Settings[/color] resource reserve",
+				"tooltip": "Won't share resource below the set reserve",
+				"config": "boongui.autoTribute.tributeReserve",
+				"min": 0,
+				"max": 5000,
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			},
+			{
+				"type": "slider",
+				"label": "[color=\"220 185 70\"]Auto-Tribute Settings[/color] share weight food",
+				"tooltip": "0 won't share food, 1 will treat ally food as important as yours",
+				"config": "boongui.autoTribute.tributeShareFood",
+				"min": 0,
+				"max": 1.2,
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			},
+			{
+				"type": "slider",
+				"label": "[color=\"220 185 70\"]Auto-Tribute Settings[/color] share weight wood",
+				"tooltip": "0 won't share wood, 1 will treat ally wood as important as yours",
+				"config": "boongui.autoTribute.tributeShareWood",
+				"min": 0,
+				"max": 1.2,
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			},
+			{
+				"type": "slider",
+				"label": "[color=\"220 185 70\"]Auto-Tribute Settings[/color] share weight stone",
+				"tooltip": "0 won't share stone, 1 will treat ally stone as important as yours",
+				"config": "boongui.autoTribute.tributeShareStone",
+				"min": 0,
+				"max": 1.2,
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			},
+			{
+				"type": "slider",
+				"label": "[color=\"220 185 70\"]Auto-Tribute Settings[/color] share weight metal",
+				"tooltip": "0 won't share metal, 1 will treat ally metal as important as yours",
+				"config": "boongui.autoTribute.tributeShareMetal",
+				"min": 0,
+				"max": 1.2,
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			},
+			{
+				"type": "boolean",
+				"label": "[color=\"220 185 70\"]Eco-Help Lumber[/color] Activate Lumber upgrade",
+				"tooltip": "Check if you want lumber upgrades to be researched when available",
+				"config": "boongui.ecohelp.storeHouseActive",
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			},
+			{
+				"type": "slider",
+				"label": "[color=\"220 185 70\"]Eco-Help Lumber[/color] Wood amount Phase I",
+				"tooltip": "Amount of wood in reserve before researching upgrade in Phase I",
+				"config": "boongui.ecohelp.woodStorehouseP1",
+				"min": 200,
+				"max": 1000,
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			},
+			{
+				"type": "boolean",
+				"label": "[color=\"220 185 70\"]Eco-Help Farm[/color] Activate Farm upgrade",
+				"tooltip": "Check if you want farm upgrades to be researched when available",
+				"config": "boongui.ecohelp.farmActive",
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			},
+			{
+				"type": "slider",
+				"label": "[color=\"220 185 70\"]Eco-Help Farm[/color] Wood amount Phase I",
+				"tooltip": "Amount of wood in reserve before researching upgrade in Phase I",
+				"config": "boongui.ecohelp.woodFarmP1",
+				"min": 200,
+				"max": 1000,
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			},
+			{
+				"type": "boolean",
+				"label": "[color=\"220 185 70\"]Eco-Help Gather[/color] Activate Fruits Gathering upgrade",
+				"tooltip": "Check if you want Fruits Gathering upgrades to be researched when available",
+				"config": "boongui.ecohelp.fruitsActive",
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			},
+			{
+				"type": "boolean",
+				"label": "[color=\"220 185 70\"]Barter[/color] Enable Market Pice Panel [color=\"220 25 25\"] Need Restart [/color]",
+				"tooltip": "Check if you want the market prices options to show on the right panel",
+				"config": "boongui.barter.isEnabled",
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			},
+			{
+				"type": "boolean",
+				"label": "[color=\"220 185 70\"]Right Panel[/color] Same configuration as last game",
+				"tooltip": "On: will activate helpers that you last used in previous game, OFF: will always start with all off.",
+				"config": "boongui.controlPanel.preactivateHelpers",
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			}
+		]
+	},
+	{
+		"label": "BetterQuickStart",
+		"options": [
+			{
+				"type": "boolean",
+				"label": "[color=\"220 185 70\"]QuickStart[/color] EnableQuickStart",
+				"tooltip": "Decide if you want QuickStart enabled or not ",
+				"config": "boongui.quickStart.enabled"
+			},
+			{
+				"type": "dropdown",
+				"label": "[color=\"220 185 70\"]QuickStart[/color] Melee units assignement",
+				"tooltip": "What should melee infantry gather?",
+				"config": "boongui.quickStart.meleeAssignment",
+				"list": [
+					{
+						"value": "tree",
+						"label": "[color=\"220 185 70\"]tree - Default[/color]"
+					},
+					{
+						"value": "fruit",
+						"label": "fruit"
+					},
+					{
+						"value": "meat",
+						"label": "meat"
+					},
+					{
+						"value": "unassigned",
+						"label": "unassigned"
+					}
+				],
+				"dependencies": [
+					"boongui.quickStart.enabled"
+				]
+			},
+			{
+				"type": "dropdown",
+				"label": "[color=\"220 185 70\"]QuickStart[/color] Ranged units assignement",
+				"tooltip": "What should ranged infantry gather?",
+				"config": "boongui.quickStart.rangedAssignment",
+				"list": [
+					{
+						"value": "tree",
+						"label": "[color=\"220 185 70\"]tree - Default[/color]"
+					},
+					{
+						"value": "fruit",
+						"label": "fruit"
+					},
+					{
+						"value": "meat",
+						"label": "meat"
+					},
+					{
+						"value": "unassigned",
+						"label": "unassigned"
+					}
+				],
+				"dependencies": [
+					"boongui.quickStart.enabled"
+				]
+			},
+			{
+				"type": "dropdown",
+				"label": "[color=\"220 185 70\"]QuickStart[/color] Cavalry units assignement",
+				"tooltip": "What should cavalry gather?",
+				"config": "boongui.quickStart.cavalryAssignment",
+				"list": [
+					{
+						"value": "meat",
+						"label": "[color=\"220 185 70\"]meat - Default[/color]"
+					},
+					{
+						"value": "fruit",
+						"label": "fruit"
+					},
+					{
+						"value": "tree",
+						"label": "tree"
+					},
+					{
+						"value": "unassigned",
+						"label": "unassigned"
+					}
+				],
+				"dependencies": [
+					"boongui.quickStart.enabled"
+				]
+			},
+			{
+				"type": "dropdown",
+				"label": "[color=\"220 185 70\"]QuickStart[/color] Females assignement",
+				"tooltip": "What should females gather? Set to meat to play like DoctorOrgans.",
+				"config": "boongui.quickStart.femaleAssignment",
+				"list": [
+					{
+						"value": "fruit",
+						"label": "[color=\"220 185 70\"]fruit - Default[/color]"
+					},
+					{
+						"value": "meat",
+						"label": "meat"
+					},
+					{
+						"value": "tree",
+						"label": "tree"
+					},
+					{
+						"value": "unassigned",
+						"label": "unassigned"
+					}
+				],
+				"dependencies": [
+					"boongui.quickStart.enabled"
+				]
+			},
+			{
+				"type": "dropdown",
+				"label": "[color=\"220 185 70\"]QuickStart[/color] Select units",
+				"tooltip": "What units do you want selected?",
+				"config": "boongui.quickStart.selectUnits",
+				"list": [
+					{
+						"value": "FemaleCitizen",
+						"label": "[color=\"220 185 70\"]FemaleCitizen - Default[/color]"
+					},
+					{
+						"value": "Cavalry",
+						"label": "Cavalry"
+					},
+					{
+						"value": "Melee",
+						"label": "Melee"
+					},
+					{
+						"value": "Ranged",
+						"label": "Ranged"
+					},
+					{
+						"value": "Melee Ranged",
+						"label": "Infantry"
+					},
+					{
+						"value": "Melee Ranged FemaleCitizen",
+						"label": "All unmounted"
+					},
+					{
+						"value": "CivilCentre",
+						"label": "CivilCentre"
+					}
+				],
+				"dependencies": [
+					"boongui.quickStart.enabled"
+				]
+			},
+			{
+				"type": "dropdown",
+				"label": "[color=\"220 185 70\"]QuickStart[/color] First training batch unit type",
+				"tooltip": "What units do you want selected?",
+				"config": "boongui.quickStart.unitsToTrain",
+				"list": [
+					{
+						"value": "0",
+						"label": "[color=\"220 185 70\"]Female - Default[/color]"
+					},
+					{
+						"value": "1",
+						"label": "Melee"
+					},
+					{
+						"value": "2",
+						"label": "Ranged"
+					},
+					{
+						"value": "3",
+						"label": "Cavalry"
+					}
+				],
+				"dependencies": [
+					"boongui.quickStart.enabled"
+				]
+			},
+			{
+				"type": "slider",
+				"label": "[color=\"220 185 70\"]QuickStart[/color] First training batch size",
+				"tooltip": "Amount of units to train the first batch when starting (will be rounded)",
+				"config": "boongui.quickStart.numberOfUnitsToTrain",
+				"min": 1,
+				"max": 10,
+				"dependencies": [
+					"boongui.quickStart.enabled"
+				]
+			},
+			{
+				"type": "dropdown",
+				"label": "[color=\"220 185 70\"]QuickStart[/color] Camera focus",
+				"tooltip": "What resource to focus camera on?",
+				"config": "boongui.quickStart.camerafocus",
+				"list": [
+					{
+						"value": "fruit",
+						"label": "[color=\"220 185 70\"]fruit - Default[/color]"
+					},
+					{
+						"value": "meat",
+						"label": "meat"
+					},
+					{
+						"value": "tree",
+						"label": "tree"
+					}
+				],
+				"dependencies": [
+					"boongui.quickStart.enabled"
+				]
+			},
+			{
+				"type": "dropdown",
+				"label": "[color=\"220 185 70\"]QuickStart[/color] Prepare Building",
+				"tooltip": "What building to prepare?",
+				"config": "boongui.quickStart.placeFoundation",
+				"list": [
+					{
+						"value": "None",
+						"label": "None"
+					},
+					{
+						"value": "farmstead",
+						"label": "[color=\"220 185 70\"] farmstead - Default[/color]"
+					},
+					{
+						"value": "storehouse",
+						"label": "storehouse"
+					},
+					{
+						"value": "house",
+						"label": "house"
+					}
+				],
+				"dependencies": [
+					"boongui.quickStart.enabled"
+				]
+			},
+			{
+				"type": "dropdown",
+				"label": "[color=\"220 185 70\"]QuickStart[/color] Set Rally Point",
+				"tooltip": "What resource to set rally on?",
+				"config": "boongui.quickStart.rallyPoint",
+				"list": [
+					{
+						"value": "tree",
+						"label": "[color=\"220 185 70\"] tree - Default[/color]"
+					},
+					{
+						"value": "None",
+						"label": "None"
+					},
+					{
+						"value": "fruit",
+						"label": "fruit"
+					},
+					{
+						"value": "meat",
+						"label": "meat"
+					}
+				],
+				"dependencies": [
+					"boongui.quickStart.enabled"
+				]
+			},
+			{
+				"type": "boolean",
+				"label": "[color=\"220 185 70\"]QuickStart[/color] Unload unassigned units",
+				"tooltip": "Keep unassigned units Garnisoned if unchecked",
+				"config": "boongui.quickStart.unloadIfUndefined",
+				"dependencies": [
+					"boongui.quickStart.enabled"
+				]
+			},
+			{
+				"type": "boolean",
+				"label": "[color=\"220 185 70\"]Seeh Chain[/color] Enable",
+				"tooltip": "Impact performance. Not recommanded.",
+				"config": "progui.stockfish.enable",
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			},
+			{
+				"type": "boolean",
+				"label": "[color=\"220 185 70\"]Seeh Chain[/color] Logs",
+				"tooltip": "Display logs and helpers for Seeh Chain",
+				"config": "progui.stockfish.debug",
+				"dependencies": [
+					"progui.helpers.enable"
+				]
+			}
+		]
+	}
+]

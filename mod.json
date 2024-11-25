@@ -1,0 +1,10 @@
+{
+  "name": "proGUI",
+  "version": "-1",
+  "label": "proGUI-hacked",
+  "description": "Hacked proGUI, reveal stats cheats",
+  "ignoreInCompatibilityChecks": true,
+  "dependencies": [
+    "0ad=0.0.26"
+  ]
+}

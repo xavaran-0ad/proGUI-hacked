@@ -1,0 +1,1 @@
+var fieldManager = new FieldManager();

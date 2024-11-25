@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sprites>
+  <!-- Info: https://trac.wildfiregames.com/wiki/GUI_-_Sprites -->
+  <!--
+	==========================================
+	TOP PANEL
+	==========================================
+	-->
+  <sprite name="topPanelTransparent">
+    <image backcolor="transparent" size="0 0 100% 100%" />
+  </sprite>
+  <sprite name="shaderLooksNice">
+    <image texture="session/panel_shader_top_edge.png" size="0 0 100% 1" />
+    <image texture="session/panel_shader_light.png" size="0 0 100% 100%" />
+  </sprite>
+
+  <!--
+	==========================================
+	MINI MAP
+	==========================================
+	-->
+  <sprite name="minimapHoverPanel">
+    <!-- sides -->
+    <image
+      texture="global/border/line_horiz.png"
+      texture_size="0 0 64 4"
+      size="4 0 14%-2 4"
+    />
+    <image
+      texture="global/border/line_horiz.png"
+      texture_size="0 0 64 4"
+      size="86%+2 0 100% 4"
+    />
+    <image
+      texture="global/border/line_vert.png"
+      texture_size="0 0 4 64"
+      size="100%-4 4 100% 100%-4"
+    />
+    <image
+      texture="global/border/line_horiz.png"
+      texture_size="0 0 64 4"
+      size="4 100%-4 100%-4 100%"
+    />
+    <image
+      texture="global/border/line_vert.png"
+      texture_size="0 0 4 64"
+      size="0 4 4 100%-4"
+    />
+
+    <!-- corners -->
+    <image
+      texture="global/border/line_corner_top_right.png"
+      texture_size="0 0 4 4"
+      size="100%-4 0 100% 4"
+    />
+    <image
+      texture="global/border/line_corner_bottom_right.png"
+      texture_size="0 0 4 4"
+      size="100%-4 100%-4 100% 100%"
+    />
+    <image
+      texture="global/border/line_corner_bottom_left.png"
+      texture_size="0 0 4 4"
+      size="0 100%-4 4 100%"
+    />
+    <image
+      texture="global/border/line_corner_top_left.png"
+      texture_size="0 0 4 4"
+      size="0 0 4 4"
+    />
+    <!-- background -->
+    <image
+      texture="session/background_hover_panel_black.png"
+      texture_size="0 0 100% 100%"
+      size="4 4 100%-4 100%-4"
+    />
+  </sprite>
+  <sprite name="statsPowerBars">
+    <image
+      texture="session/background_hover_panel_stats_bars.png"
+      texture_size="0 0 100% 100%"
+      size="0 100%-180 342 100%"
+    />
+  </sprite>
+    <sprite name="statsPowerBarsObs">
+    <image
+      texture="session/background_hover_panel_stats_bars_obs.png"
+      texture_size="0 0 100% 100%"
+      size="0 100%-185 342 100%"
+    />
+  </sprite>
+  <!-- Minimap Hover Panel Stats-->
+  <sprite name="minimapHoverPanelStats">
+    <!-- background -->
+    <image
+      texture="session/background_hover_panel_stats.png"
+      texture_size="0 0 100% 100%"
+      size="4 -125 100%+90 100%-4"
+    />
+  </sprite>
+
+
+
+  <!--
+	==========================================
+	MINI MAP BUTTONS
+	==========================================
+	-->
+  <!-- Flare -->
+  <sprite name="MinimapFlareButtonNormal">
+    <image texture="session/minimap_buttons/minimap-flare.png" />
+  </sprite>
+  <sprite name="MinimapFlareButtonBright">
+    <effect add_color="35 35 35" />
+    <image texture="session/minimap_buttons/minimap-flare.png" />
+  </sprite>
+  <sprite name="MinimapFlareButtonGrey">
+    <effect grayscale="" />
+    <image texture="session/minimap_buttons/minimap-flare.png" />
+  </sprite>
+  <!-- Idle -->
+  <sprite name="MinimapIdleButtonNormal">
+    <image texture="session/minimap_buttons/minimap-idle.png" />
+  </sprite>
+  <sprite name="MinimapIdleButtonBright">
+    <effect add_color="35 35 35" />
+    <image texture="session/minimap_buttons/minimap-idle.png" />
+  </sprite>
+  <sprite name="MinimapIdleButtonGrey">
+    <effect grayscale="" />
+    <image texture="session/minimap_buttons/minimap-idle.png" />
+  </sprite>
+  <!-- Score -->
+  <sprite name="MinimapScoreButtonNormal">
+    <image texture="session/minimap_buttons/minimap-score.png" />
+  </sprite>
+  <sprite name="MinimapScoreButtonBright">
+    <effect add_color="35 35 35" />
+    <image texture="session/minimap_buttons/minimap-score.png" />
+  </sprite>
+  <sprite name="MinimapScoreButtonGrey">
+    <effect grayscale="" />
+    <image texture="session/minimap_buttons/minimap-score.png" />
+  </sprite>
+  <!-- Diplomacy On -->
+  <sprite name="MinimapDiplomacyOnButtonNormal">
+    <image texture="session/minimap_buttons/minimap-diplomacy-on.png" />
+  </sprite>
+  <sprite name="MinimapDiplomacyOnButtonBright">
+    <effect add_color="35 35 35" />
+    <image texture="session/minimap_buttons/minimap-diplomacy-on.png" />
+  </sprite>
+  <sprite name="MinimapDiplomacyOnButtonGrey">
+    <effect grayscale="" />
+    <image texture="session/minimap_buttons/minimap-diplomacy-on.png" />
+  </sprite>
+  <!-- Diplomacy Off -->
+  <sprite name="MinimapDiplomacyOffButtonNormal">
+    <image texture="session/minimap_buttons/minimap-diplomacy-off.png" />
+  </sprite>
+  <sprite name="MinimapDiplomacyOffButtonBright">
+    <effect add_color="35 35 35" />
+    <image texture="session/minimap_buttons/minimap-diplomacy-off.png" />
+  </sprite>
+  <sprite name="MinimapDiplomacyOffButtonGrey">
+    <effect grayscale="" />
+    <image texture="session/minimap_buttons/minimap-diplomacy-off.png" />
+  </sprite>
+
+
+
+  <!--
+	==========================================
+	BOTTOM LEFT PANEL
+	==========================================
+	-->
+  <sprite name="supplementalDetailsPanelAdjusted">
+    <!-- sides -->
+    <image
+      texture="global/border/line_horiz.png"
+      texture_size="0 0 64 4"
+      size="4 0 100%-4 4"
+    />
+    <image
+      texture="global/border/line_vert.png"
+      texture_size="0 0 4 64"
+      size="100%-4 4 100% 100%-4"
+    />
+    <image
+      texture="global/border/line_horiz.png"
+      texture_size="0 0 64 4"
+      size="4 100%-4 100%-4 100%"
+    />
+    <image
+      texture="global/border/line_vert.png"
+      texture_size="0 0 4 64"
+      size="0 4 4 100%-4"
+    />
+    <!-- corners -->
+    <image
+      texture="global/border/line_corner_middle_left.png"
+      texture_size="0 0 4 4"
+      size="100%-4 0 100% 4"
+    />
+    <image
+      texture="global/border/line_corner_bottom_middle.png"
+      texture_size="0 0 4 4"
+      size="100%-4 100%-4 100% 100%"
+    />
+    <image
+      texture="global/border/line_corner_bottom_left.png"
+      texture_size="0 0 4 4"
+      size="0 100%-4 4 100%"
+    />
+    <image
+      texture="global/border/line_corner_top_left.png"
+      texture_size="0 0 4 4"
+      size="0 0 4 4"
+    />
+    <!-- background -->
+    <image
+      texture="global/modern/background.png"
+      real_texture_placement="0 0 189 170"
+      texture_size="0 0 100% 100%"
+      size="4 4 100%-4 100%-4"
+    />
+  </sprite>
+
+  <!--
+	==========================================
+	BOTTOM MIDDLE PANEL
+	==========================================
+	-->
+  <sprite name="selectionDetailsPanelAdjusted">
+    <!-- background -->
+    <image
+      texture="global/modern/background.png"
+      real_texture_placement="0 0 228 205"
+      texture_size="0 0 100% 100%"
+      size="0 0 100% 100%"
+    />
+    <!-- sides -->
+    <image
+      texture="global/border/line_horiz.png"
+      texture_size="0 0 64 4"
+      size="4 0 100%-4 4"
+    />
+    <image
+      texture="global/border/line_vert.png"
+      texture_size="0 0 4 64"
+      size="100%-4 4 100% 100%-4"
+    />
+    <image
+      texture="global/border/line_horiz.png"
+      texture_size="0 0 64 4"
+      size="4 100%-4 100%-4 100%"
+    />
+    <image
+      texture="global/border/line_vert.png"
+      texture_size="0 0 4 64"
+      size="0 4 4 100%-4"
+    />
+    <!-- corners -->
+    <image
+      texture="global/border/line_corner_top_middle.png"
+      texture_size="0 0 4 4"
+      size="100%-4 0 100% 4"
+    />
+    <image
+      texture="global/border/line_corner_bottom_right.png"
+      texture_size="0 0 4 4"
+      size="100%-4 100%-4 100% 100%"
+    />
+    <image
+      texture="global/border/line_corner_bottom_left.png"
+      texture_size="0 0 4 4"
+      size="0 100%-4 4 100%"
+    />
+    <image
+      texture="global/border/line_corner_top_left.png"
+      texture_size="0 0 4 4"
+      size="0 0 4 4"
+    />
+  </sprite>
+
+  <!--
+	==========================================
+	BOTTOM RIGHT PANEL
+	==========================================
+	-->
+  <sprite name="unitCommandsPanelAdjusted">
+    <!-- sides -->
+    <image
+      texture="global/border/line_horiz.png"
+      texture_size="0 0 64 4"
+      size="4 0 100%-4 4"
+    />
+    <image
+      texture="global/border/line_vert.png"
+      texture_size="0 0 4 64"
+      size="100%-4 4 100% 100%-4"
+    />
+    <image
+      texture="global/border/line_horiz.png"
+      texture_size="0 0 64 4"
+      size="4 100%-4 100%-4 100%"
+    />
+    <image
+      texture="global/border/line_vert.png"
+      texture_size="0 0 4 64"
+      size="0 4 4 100%-4"
+    />
+    <!-- corners -->
+    <image
+      texture="global/border/line_corner_top_right.png"
+      texture_size="0 0 4 4"
+      size="100%-4 0 100% 4"
+    />
+    <image
+      texture="global/border/line_corner_bottom_right.png"
+      texture_size="0 0 4 4"
+      size="100%-4 100%-4 100% 100%"
+    />
+    <image
+      texture="global/border/line_corner_bottom_middle.png"
+      texture_size="0 0 4 4"
+      size="0 100%-4 4 100%"
+    />
+    <image
+      texture="global/border/line_corner_top_middle.png"
+      texture_size="0 0 4 4"
+      size="0 0 4 4"
+    />
+    <!-- background -->
+    <image
+      texture="global/modern/background.png"
+      real_texture_placement="0 0 398 170"
+      texture_size="0 0 100% 100%"
+      size="4 4 100%-4 100%-4"
+    />
+  </sprite>
+
+  <!--
+	==========================================
+	MISCELLANEOUS
+	==========================================
+	-->
+  <sprite name="healthForegroundDarker">
+    <image backcolor="35 155 35" />
+  </sprite>
+
+  <sprite name="prettyBackgroundColor">
+    <image backcolor="38 38 38 225" size="0 0 100% 100%" />
+  </sprite>
+
+  <sprite name="prettyBackgroundColorLight">
+    <image backcolor="38 38 38 185" size="0 0 100% 100%" />
+  </sprite>
+
+  <sprite name="statModeIndicatorFrame">
+    <image backcolor="38 38 38 120" size="-1 0 1 100%" />
+    <image backcolor="38 38 38 120" size="0 100%-1 100% 100%+1" />
+    <image backcolor="38 38 38 120" size="100%-1 0 100%+1 100%" />
+    <image backcolor="38 38 38 120" size="0 -1 100% 1" />
+    <image texture="session/panel_shader_light.png" size="0 0 100% 100%" />
+  </sprite>
+
+  <sprite name="statModeIndicatorHighlight">
+    <image backcolor="255 255 255 80" size="0 0 100% 100%" />
+  </sprite>
+
+  <sprite name="statTopPanelDivide">
+    <image backcolor="120 120 120 80" size="0 0 100% 100%" />
+  </sprite>
+
+  <sprite name="statTopPanelDivideLight">
+    <image backcolor="120 120 120 40" size="0 0 100% 100%" />
+  </sprite>
+
+  <sprite name="simpleHighlighter">
+    <image texture="session/panel_shader_top_edge.png" size="0 0 110% 2" />
+    <image
+      texture="session/panel_shader_top_edge.png"
+      size="0 100%-2 120% 100%"
+    />
+  </sprite>
+
+  <sprite name="simpleHighlighterBackground">
+    <image texture="session/panel_shader_top_edge.png" size="0 0 100% 2" />
+    <image backcolor="255 255 255 40" size="0 2 100% 100%-2" />
+    <image
+      texture="session/panel_shader_top_edge.png"
+      size="0 100%-2 100% 100%"
+    />
+  </sprite>
+
+  <sprite name="snIconPortraitStrongerHighlight">
+    <effect add_color="65 65 65 0" />
+    <image
+      texture="session/icons/bkg/portrait_black.dds"
+      size="0 0 100% 100%"
+    />
+  </sprite>
+
+  <sprite name="snIconPortraitEnabled">
+    <effect add_color="100 0 0" />
+    <image
+      texture="session/icons/bkg/portrait_black.dds"
+      size="0 0 100% 100%"
+    />
+  </sprite>
+
+  <sprite name="emptyGrayCircle">
+    <effect add_color="95 95 95" />
+    <image
+      real_texture_placement="0 0 16 16"
+      texture="session/phosphor/circle-empty.png"
+    />
+  </sprite>
+
+  <sprite name="sleepSymbol">
+    <effect add_color="dimmedWhite" />
+    <image texture="session/phosphor/sleep.png" />
+  </sprite>
+</sprites>

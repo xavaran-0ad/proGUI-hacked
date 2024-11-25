@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object>
+  <!-- Circle-->
+  <object name="minimapPanel">
+    <!-- Black background circle-->
+    <object
+      name="minimapBG"
+      type="image"
+      size="70 -15 100%+71 100%-15"
+      sprite="stretched:session/background_circle.png"
+      ghost="true"
+      z="199"
+    />
+    <!-- MiniMap -->
+    <object
+      name="minimap"
+      size="70 -15 100%+71 100%-15"
+      type="minimap"
+      mask="true"
+      flare_texture_count="16"
+      flare_render_size="32"
+      flare_animation_speed="11"
+      flare_interleave="true"
+      flare_lifetime_seconds="6"
+      z="200"
+    />
+    <!-- Minimap circle -->
+    <object
+      name="minimapCircle"
+      type="image"
+      sprite="stretched:session/background_minimap_circle.png"
+      size="70 -15 100%+71 100%-15"
+      ghost="true"
+      z="201"
+    />
+  </object>
+  <!-- Hover panel below the minimap -->
+  <object name="hoverPanel" type="image" sprite="minimapHoverPanelStats">
+    <!-- Stat Button -->
+    <object
+      name="miniMapBarStatsGlow"
+      type="button"
+      size="0%+8 0%-8 0%+74 0%+58"
+      tooltip_style="sessionToolTipCircleBottom"
+      sprite_over="stretched:session/background_hover_panel_stats_bars_glow.png"
+      sound_pressed="audio/interface/ui/ui_button_click.ogg"
+    />
+    <!-- Flare Button -->
+    <object
+      name="flareButton"
+      type="button"
+      size="86%+80 14%-22 100%+80 68%-22"
+      tooltip_style="sessionToolTipCircleBottom"
+      hotkey="session.flareactivate"
+      sprite="MinimapFlareButtonNormal"
+      sprite_pressed="MinimapFlareButtonNormal"
+      sprite_over="MinimapFlareButtonBright"
+      mouse_event_mask="texture:session/minimap_buttons/minimap-flare.png"
+      sprite_disabled="MinimapFlareButtonGrey"
+      sound_pressed="audio/interface/ui/ui_button_click.ogg"
+      z="0"
+    />
+    <!-- Score Button -->
+    <object
+      name="scoreButton"
+      type="button"
+      size="18%+44 54%-22 32%+43 108%-22"
+      tooltip_style="sessionToolTipCircleBottom"
+      sprite="MinimapScoreButtonNormal"
+      sprite_pressed="MinimapScoreButtonNormal"
+      sprite_over="MinimapScoreButtonBright"
+      mouse_event_mask="texture:session/minimap_buttons/minimap-score.png"
+      sound_pressed="audio/interface/ui/ui_button_click.ogg"
+      z="0">
+      <action on="Press">g_stats.toggle();</action>
+    </object>
+    <!-- Diplomacy Colors Button -->
+    <object
+      name="diplomacyColorsButton"
+      type="button"
+      size="73%+80 54%-22 87%+79 108%-22"
+      tooltip_style="sessionToolTipCircleBottom"
+      hotkey="session.diplomacycolors"
+      sound_pressed="audio/interface/ui/ui_button_click.ogg"
+      z="0"
+    />
+  </object>
+  <object name="powerPanel" type="image" sprite="statsPowerBars" ghost="true" z="15">
+    <object name="powerBar" type="image">
+      <object
+        z="-15"
+        name="backgroundMilitaryPowerBar"
+        type="image"
+        size="98%+1 95% 92%-3 80%"
+        sprite="backcolor: 215 215 145 110"
+      />
+      <object
+        z="-14"
+        name="militaryPowerBar"
+        type="image"
+        size="98%+1 95% 92%-3 95%"
+        sprite="backcolor: 145 10 20 180"
+      />
+      <object
+        z="-15"
+        name="backgroundEcoPowerBar"
+        type="image"
+        size="84%-2 94% 89%+1 80%"
+        sprite="backcolor: 215 215 145 110"
+      />
+      <object
+        z="-14"
+        name="ecoPowerBar"
+        type="image"
+        size="84%-2 94% 89%+1 94%"
+        sprite="backcolor: 255 255 80 180"
+      />
+    </object>
+  </object>
+</object>

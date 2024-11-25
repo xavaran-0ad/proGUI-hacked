@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+  <object name="StatsModes" hidden="true">
+    <repeat count="5" var="a">
+      <object name="ControlPanelTabButtons[a]" type="image">
+        <repeat count="9" var="b">
+          <object
+              name="ControlPanelTabButton[a][b]"
+              size="0 0 33 33"
+              type="checkbox"
+              checked="true"
+              style="tabButtons">
+      
+            <object
+              name="ControlPanelTabButton[a][b]_Background"
+              type="image"
+              ghost="true"
+            />
+            <object
+              name="ControlPanelTabButton[a][b]_BackgroundState"
+              type="image"
+              ghost="true"
+              size="3 3 10 10"
+            />
+            <object
+              type="text"
+              name="ControlPanelTabButton[a][b]_Name"
+              size="0 0 0 0"
+              style="ModernLabelText"
+              ghost="true"
+            />
+            <object
+              type="image"
+              name="ControlPanelTabButton[a][b]_Icon"
+              ghost="true"
+              size="4 6 100%-4 100%-6"
+            />
+            <object
+              name="ControlPanelTabButton[a][b]_Order"
+              type="text"
+              ghost="true"
+              size="0 -16 38 16"
+              font="sans-bold-stroke-12"
+              textcolor="255 255 255"
+              text_align="center"
+              text_valign="top"
+            />
+            <object
+              name="ControlPanelTabButton[a][b]_Count"
+              type="text"
+              ghost="true"
+              size="0 0 36 36"
+              font="sans-bold-stroke-16"
+              textcolor="255 255 255"
+              text_align="right"
+              text_valign="bottom"
+            />
+          </object>
+        </repeat>
+      </object>
+    </repeat>
+    
+  <!-- Special objects for creating special tooltips -->
+  <object
+    name="fixedTooltipStatsModeDefault"
+    type="text"
+    text_align="center"
+    text_valign="center"
+    sprite="BackgroundSessionTooltip"
+    font="sans-stroke-16"
+    textcolor="white"
+    size="100%-390 0 100%-190 78"
+    hidden="true"
+    ghost="true"
+    z="150"
+  />
+  <object
+    name="fixedTooltipStatsModeIndicator"
+    type="text"
+    text_align="center"
+    text_valign="center"
+    sprite="BackgroundSessionTooltip"
+    font="sans-stroke-16"
+    textcolor="white"
+    size="100%-400 -120 100%-190 26"
+    hidden="true"
+    ghost="true"
+    z="150"
+  />
+  <object
+    name="fixedTooltipStatsModeItem"
+    type="text"
+    text_align="left"
+    text_valign="bottom"
+    font="sans-stroke-16"
+    sprite="BackgroundSessionTooltip"
+    textcolor="white"
+    size="100%-480 -120 100%-190 26"
+    hidden="true"
+    ghost="true"
+    z="150"
+  />
+
+  <object name="StatsModesTabButtons" type="image">
+    <repeat count="30" var="n">
+      <object
+        name="StatsModesTabButton[n]"
+        type="checkbox"
+        checked="false"
+        style="tabButtons"
+        size="0 0 100% 100%"
+        hidden="true"
+        tooltip_style="fixedTooltipStatsModeDefault">
+        <object
+        name="StatsModesTabButton[n]_Background"
+        type="image"
+        ghost="true"
+        />
+
+        <object
+          type="text"
+          name="StatsModesTabButton[n]_Name"
+          size="0 0 0 0"
+          style="ModernLabelText"
+          ghost="true"
+        />
+        <object
+          type="image"
+          name="StatsModesTabButton[n]_Icon"
+          ghost="true"
+          size="4 4 100%-4 100%-5"
+        />
+        <object
+          name="StatsModesTabButton[n]_Count"
+          type="text"
+          ghost="true"
+          size="3 3 46 46"
+          font="sans-bold-stroke-18"
+          textcolor="255 255 255"
+          text_align="center"
+          text_valign="center"
+        />
+        <object
+          name="StatsModesTabButton[n]_Symbol"
+          type="text"
+          ghost="true"
+          size="3 3 46 46"
+          font="sans-bold-stroke-16"
+          textcolor="255 255 255"
+          text_align="center"
+          text_valign="bottom"
+        />
+        <action on="MouseWheelUp">
+          g_stats.statsModes.increaseMode(this.name);
+        </action>
+        <action on="MouseWheelDown">g_stats.statsModes.decreaseMode(this.name);</action>
+      </object>
+    </repeat>
+  </object>
+
+  <object name="StatsModesRows">
+    <repeat count="4" var="i">
+      <object name="StatsModesRow[i]" size="0 0 100% 100%" hidden="true">
+        <object
+          name="StatsModesRow[i]Indicator"
+          type="button"
+          style="tabButtonIndicator"
+          size="100%-20 1 100% 79"
+          tooltip_style="fixedTooltipStatsModeIndicator">
+          <object
+            name="StatsModesRow[i]IndicatorTeamColor"
+            type="image"
+            size="8 0 100% 78"
+            ghost="true"
+            z="10">
+            <object type="image" sprite="statModeIndicatorFrame" />
+          </object>
+          <object
+            name="StatsModesRow[i]IndicatorColor"
+            type="image"
+            size="3 5 100%-6 73"
+            ghost="true"
+            z="20">
+            <object
+            type="text"
+            name="StatsModesRow[i]Text"
+            size="0 0 100% 100%"
+            text_align="center"
+            text_valign="center"
+            style="ModernLabelText"
+            ghost="true"
+            z="25"
+          />
+            <object type="image" sprite="statModeIndicatorFrame" />
+          </object>
+        </object>
+        <object name="StatsModesRow[i]Items" size="0 1 100%-20 79">
+          <repeat count="20" var="j">
+            <object
+              name="StatsModesRow[i]Item[j]"
+              size="0 0 77 77"
+              type="button"
+              tooltip_style="fixedTooltipStatsModeItem"
+              style="iconButton"
+              hidden="true">
+              <object
+                name="StatsModesRow[i]Item[j]Icon"
+                type="image"
+                ghost="true"
+                size="3 3 76 76"
+              />
+              <object
+                name="StatsModesRow[i]Item[j]Sleep"
+                type="text"
+                ghost="true"
+                size="3 3 74 75"
+                font="sans-bold-stroke-16"
+                textcolor="255 5 5"
+                text_align="left"
+                text_valign="top"
+                z="15"
+              />
+              <object
+                name="StatsModesRow[i]Item[j]Count"
+                type="text"
+                ghost="true"
+                size="3 3 74 75"
+                font="sans-bold-stroke-18"
+                textcolor="255 5 5"
+                text_align="right"
+                text_valign="bottom"
+                z="15"
+              />
+              <object
+                name="StatsModesRow[i]Item[j]Progress"
+                type="image"
+                ghost="true"
+                size="3 33 38 38"
+                z="12"
+              />
+            </object>
+          </repeat>
+        </object>
+      </object>
+    </repeat>
+  </object>
+</object>

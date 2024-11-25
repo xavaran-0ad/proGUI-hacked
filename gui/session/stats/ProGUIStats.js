@@ -1,0 +1,373 @@
+class ProGUIStats {
+
+	constructor(playerViewControl) {
+		this.root = Engine.GetGUIObjectByName("Stats");
+
+		this.shouldForceRender = true;
+		this.statsTopPanel = new BoonGUIStatsTopPanel(() => this.shouldForceRender);
+		this.statsModes = new ProGUIStatsModes(() => this.shouldForceRender);
+		this.summaryTeams = new ProGUISummaryTeams(() => this.shouldForceRender);
+
+		if (Engine.ConfigDB_GetValue("user", "progui.helpers.enable") == "true") {
+			this.controlPanel = new ProGUIControlPanel(() => this.shouldForceRender);
+			this.reservePanel = new ProGUIReservePanel(() => this.shouldForceRender);
+			this.techPanel = new ProGUITechPanel(() => this.shouldForceRender);
+			this.ecoTechPanel = new ProGUIEcoTechPanel(() => this.shouldForceRender);
+			this.tributePanel = new ProGUITributePanel(() => this.shouldForceRender);
+		}
+		this.resourcesBuffer = new Map();
+		this.killsBuffer = new Map();
+		this.deathsBuffer = new Map();
+		this.lastPlayerLength = null;
+		this.shortGameInfoLabel = Engine.GetGUIObjectByName("shortGameInfoLabel");
+		this.resourceCounts = Engine.GetGUIObjectByName("resourceCounts");
+
+		this.playerViewControl = playerViewControl;
+		this.configValues();
+		this.updateLayout();
+		this.updateShortGameInfoLabel();
+
+		this.checkbox = Engine.GetGUIObjectByName("visibilityStatsModesPanel");
+		this.checkbox.tooltip = "Disable Eco-Helper." + coloredText("\nDisable all ProGUI helpers.", "red");
+		this.checkbox.checked = Engine.ConfigDB_GetValue("user", this.configName[2]) == "true";
+
+		playerViewControl.registerPlayerIDChangeHandler(this.updateLayout.bind(this));
+		playerViewControl.registerViewedPlayerChangeHandler(this.onViewedPlayerChange.bind(this));
+		this.resizeInit();
+		registerPlayersFinishedHandler(this.presentStatsTopPanel.bind(this));
+		registerConfigChangeHandler(this.updateShortGameInfoLabel.bind(this));
+		this.root.onWindowResized = () => this.toggle(false); //TODO find how GUI hide on resize (bug was prior to teamsummary)
+		this.root.onTick = this.onTick.bind(this);
+		if (Engine.ConfigDB_GetValue("user", "boongui.teamBriefing") == "true" && !g_IsObserver && Engine.ConfigDB_GetValue("user", "boongui.teamBriefing.hideGUI") == "true" && g_SimState.timeElapsed < 2000)
+			this.toggle(true);
+	}
+
+	lastTick = 0;
+
+	configValues() {
+		for (let i = 0; i < this.configName.length; i++) {
+			if (Engine.ConfigDB_GetValue("user", this.configName[i]) === "")
+				Engine.ConfigDB_CreateAndWriteValueToFile("user", this.configName[i], "true", "config/user.cfg");
+		}
+		this.root.hidden = Engine.ConfigDB_GetValue("user", g_IsObserver ? this.configName[0] : this.configName[1]) == "false";
+		this.statsModes.root.hidden = false;
+	}
+
+	toggle(bool) {
+		if (bool != undefined)
+			this.root.hidden = bool;
+		else {
+			toggleConfigBool(g_IsObserver ? ProGUIStats.prototype.configName[0] : ProGUIStats.prototype.configName[1]);
+
+			if (Engine.ConfigDB_GetValue("user", "boongui.hideOnlyTopPanelStats") === "true")
+				this.statsTopPanel.rowsContainer.hidden = !this.statsTopPanel.rowsContainer.hidden;
+			else
+				this.root.hidden = !this.root.hidden;
+		}
+		this.shouldForceRender = true;
+	}
+
+	toggleCheckbox() {
+		this.statsModes.root.hidden = false;
+		toggleConfigBool(autociv.session.chatText.font.change);
+		this.shouldForceRender = true;
+	}
+
+	onTick() {
+		const forceRender = this.shouldForceRender;
+		this.shouldForceRender = false;
+		if (this.root.hidden) {
+			if (this.lastPlayerLength != 0) this.resize(0);
+			return;
+		}
+
+		if (forceRender || g_LastTickTime - this.lastTick >= g_StatusBarUpdate) {
+			this.update();
+			this.lastTick = g_LastTickTime;
+		}
+	}
+
+	onViewedPlayerChange() {
+		this.configValues();
+		this.updateLayout();
+		this.resize(this.lastPlayerLength);
+	}
+
+	presentStatsTopPanel() {
+		// if a player resigns always show it
+		this.root.hidden = false;
+		Engine.ConfigDB_CreateAndWriteValueToFile("user", this.configName[0], "true", "config/user.cfg");
+		this.onViewedPlayerChange();
+	}
+
+	playerColor(state) {
+		return g_DiplomacyColors.getPlayerColor(state.index);
+	}
+
+	teamColor(state) {
+		const teamRepresentatives = {};
+		for (let i = 1; i < g_Players.length; ++i) {
+			const group = g_Players[i].state == "active" ? g_Players[i].team : "";
+			if (group != -1 && !teamRepresentatives[group])
+				teamRepresentatives[group] = i;
+		}
+		return g_DiplomacyColors.getPlayerColor([teamRepresentatives[state.team] || state.index]);
+	}
+
+	resizeInit() {
+		for (const i in Engine.GetGUIObjectByName("unitGroupPanel").children) {
+			const button = Engine.GetGUIObjectByName(`unitGroupButton[${i}]`);
+			const icon = Engine.GetGUIObjectByName(`unitGroupIcon[${i}]`);
+
+			const label = Engine.GetGUIObjectByName(`unitGroupLabel[${i}]`);
+			button.size = "0 0 50 50";
+			icon.size = "3 3 47 47";
+			label.font = "sans-bold-stroke-20";
+			label.text_valign = "top";
+			label.text_align = "right";
+		}
+
+		for (const i in Engine.GetGUIObjectByName("panelEntityButtons").children) {
+			const panelEntButton = Engine.GetGUIObjectByName(`panelEntityButton[${i}]`);
+			panelEntButton.size = "0 0 60 60";
+			setPanelObjectPosition(panelEntButton, i, Infinity);
+		}
+	}
+
+	resize(length) {
+		const PAD = 5;
+		this.lastPlayerLength = length;
+		this.shortGameInfoLabel.hidden = !g_IsObserver && !this.playerViewControl.changePerspective;
+		const shortGameInfoLabelPAD = this.shortGameInfoLabel.hidden ? "" : this.shortGameInfoLabel.size.bottom;
+		let y = (26 * (length + 1) + shortGameInfoLabelPAD);
+		if (Engine.ConfigDB_GetValue("user", "boongui.hideAlliesStats") == "true" && !g_IsObserver)
+			y = (52 + shortGameInfoLabelPAD);
+		const shortGameInfoLabel_width = Engine.GetGUIObjectByName("shortGameInfoLabel").size.right;
+		this.statsTopPanel.root.size = `0 ${shortGameInfoLabelPAD} ${shortGameInfoLabel_width} ${y}`;
+		y = this.statsTopPanel.root.size.bottom + PAD;
+
+		const panelEntityButtons = Engine.GetGUIObjectByName("panelEntityButtons");
+		panelEntityButtons.size = `2 ${y} 50 ${y + 60}`;
+		y = panelEntityButtons.size.bottom + PAD;
+
+		const chatPanel = Engine.GetGUIObjectByName("chatPanel");
+		chatPanel.size = `0 ${y} 100% ${y + 150}`;
+		y = chatPanel.size.bottom + PAD;
+
+		const unitGroupPanel = Engine.GetGUIObjectByName("unitGroupPanel");
+		unitGroupPanel.size = `0 ${y} 100% ${y + 200}`;
+	}
+	showHideAlliesStats() {
+		toggleConfigBool("boongui.hideAlliesStats");
+		this.resize(1);
+	}
+
+	calculateResourceRates(state) {
+		state.resourceRates = {};
+		state.powerRate = {};
+		state.ecoRate = {};
+
+		const buffer = this.resourcesBuffer.get(state.index);
+		const killsBuffer = this.killsBuffer.get(state.index);
+		const deathsBuffer = this.deathsBuffer.get(state.index);
+		const now = g_SimState.timeElapsed;
+		const gatheredNow = state.resourcesGathered;
+		const killsNow = state.enemyUnitsKilledTotal;
+		const deathsNow = state.unitsLostTotal;
+		if (!buffer) {
+			this.resourcesBuffer.set(state.index, [[now, gatheredNow]]);
+			return;
+		}
+		if (!killsBuffer) {
+			this.killsBuffer.set(state.index, [[now, killsNow]]);
+			return;
+		}
+		if (!deathsBuffer) {
+			this.deathsBuffer.set(state.index, [[now, deathsNow]]);
+			return;
+		}
+
+		const [last] = buffer[buffer.length - 1];
+		if (now - last > 0) {
+			while (buffer.length >= this.IncomeRateBufferSize) buffer.shift();
+			buffer.push([now, gatheredNow]);
+			while (killsBuffer.length >= this.IncomeRateBufferSize) killsBuffer.shift();
+			killsBuffer.push([now, killsNow]);
+			while (deathsBuffer.length >= this.IncomeRateBufferSize) deathsBuffer.shift();
+			deathsBuffer.push([now, deathsNow]);
+		}
+		const [then, gatheredThen] = buffer[0];
+		const killsThen = killsBuffer[0][1];
+		const deathsThen = deathsBuffer[0][1];
+		const deltaS = (now - then) / 1000;
+		const totalGathered = { "now": 0, "then": 0 };
+		for (const resType of g_BoonGUIResTypes) {
+			totalGathered.now += gatheredNow[resType];
+			totalGathered.then += gatheredThen[resType];
+			const rate = Math.round(((gatheredNow[resType] - gatheredThen[resType]) / deltaS) * 10);
+			state.resourceRates[resType] = Math.floor(rate / 5) * 5;
+		}
+		const powerRate = ((killsNow - killsThen + 1) / (deathsNow - deathsThen + 1));
+		state.powerRate = powerRate;
+		let averageGatheredPeriod = (totalGathered.now - totalGathered.then) / (now - then);
+		let averageGatheredGame = (totalGathered.now) / (now);
+		const ecoRate = averageGatheredPeriod / averageGatheredGame;
+		state.ecoRate = ecoRate;
+	}
+
+
+	getPlayersStates() {
+		return Engine.GuiInterfaceCall("boongui_GetOverlay", {
+			g_IsObserver, g_ViewedPlayer, g_LastTickTime
+		}).players ?? [];
+	}
+
+	update() {
+		Engine.ProfileStart("BoonGUIStats:update");
+
+		Engine.ProfileStart("BoonGUIStats:update:GuiInterfaceCall");
+		const playersStates = this.getPlayersStates();
+		Engine.ProfileStop();
+
+		Engine.ProfileStart("BoonGUIStats:update:Calculations");
+		for (const state of playersStates) {
+			state.teamColor = this.teamColor(state);
+			state.playerColor = this.playerColor(state);
+
+			this.calculateResourceRates(state);
+		}
+
+		if (this.lastPlayerLength != playersStates.length) {
+			this.resize(playersStates.length);
+		}
+		Engine.ProfileStop();
+
+		Engine.ProfileStart("BoonGUIStats:update:TopPanel");
+		this.statsTopPanel.update(playersStates, this.checkbox.checked);
+		Engine.ProfileStop();
+
+		Engine.ProfileStart("BoonGUIStats:update:StatsModes");
+		this.statsModes.update(playersStates, this.mode);
+
+		Engine.ProfileStop();
+		Engine.ProfileStop();
+	}
+
+	updateLayout() {
+		const isPlayer = g_ViewedPlayer > 0;
+
+		const trade = Engine.GetGUIObjectByName("tradeButton");
+		const diplomacy = Engine.GetGUIObjectByName("diplomacyButton");
+		const objectives = Engine.GetGUIObjectByName("objectivesButton");
+		const gameSpeed = Engine.GetGUIObjectByName("gameSpeedButton");
+		const optionFollowPlayer = Engine.GetGUIObjectByName("optionFollowPlayer");
+		const viewPlayer = Engine.GetGUIObjectByName("viewPlayer");
+		const menuButton = Engine.GetGUIObjectByName("menuButton");
+		const topPanel = Engine.GetGUIObjectByName("topPanel");
+		topPanel.sprite = "topPanelTransparent";
+
+		viewPlayer.hidden = !g_IsObserver && !this.playerViewControl.changePerspective;
+		diplomacy.hidden = !isPlayer;
+		trade.hidden = !isPlayer;
+		optionFollowPlayer.hidden = !(g_IsObserver && isPlayer);
+		optionFollowPlayer.size = "0 4 20 100%";
+
+		// Nice future project to show the menuButton upon hovering over it and hide it otherwise
+		// placeHoldermenuButton.onMouseEnter = function()
+		// {
+		// 	placeHoldermenuButton.hidden = true;
+		// 	menuButton.hidden = false;
+		// };
+		// menuButton.onMouseLeave = function()
+		// {
+		// 	placeHoldermenuButton.hidden = false;
+		// 	menuButton.hidden = true;
+		// };
+
+		const buttonName = [[trade], [diplomacy], [objectives], [optionFollowPlayer], [viewPlayer], [gameSpeed], [menuButton]];
+		for (let i = 0; i < buttonName.length; i++) {
+			const widthButton = buttonName[i][0].size.right - buttonName[i][0].size.left;
+			buttonName[i].push(Math.abs(widthButton));
+		}
+
+		let remainingWidth = buttonName.reduce((v, c) => v + (c[0].hidden ? 0 : c[1]), 0);
+
+		topPanel.size = "100%-" + remainingWidth + " -3 100% 34";
+
+		for (const els of buttonName) {
+			const [el, size] = els;
+
+			if (el.hidden) continue;
+
+			const nextWidth = remainingWidth - size;
+			el.size = `100%-${remainingWidth} 4 100%-${nextWidth} 32`;
+			remainingWidth = nextWidth;
+		}
+		Engine.GetGUIObjectByName("followPlayerLabel").hidden = true;
+		Engine.GetGUIObjectByName("resourceCounts").hidden = true;
+		Engine.GetGUIObjectByName("civIcon").hidden = true;
+		Engine.GetGUIObjectByName("buildLabel").hidden = true;
+
+		// some tiny adjustments that are so trivial, it would be wasteful to add the entire file
+		// top right corner for timer
+		Engine.GetGUIObjectByName("dataCounter").font = "sans-stroke-18";
+		Engine.GetGUIObjectByName("dataCounter").text_valign = "center";
+
+		// The history backlog of text in the chat panel
+		Engine.GetGUIObjectByName("chatHistoryText").font = "sans-stroke-16";
+
+		// The dev overlay should stay above the stats mode overlay
+		Engine.GetGUIObjectByName("devCommandsOverlay").z = 100;
+
+		Engine.GetGUIObjectByName("menuButton").z = 200;
+		Engine.GetGUIObjectByName("menuButtonPanel").z = 150;
+		Engine.GetGUIObjectByName("chatDialogPanel").z = 200;
+		// Game objectives panel
+		Engine.GetGUIObjectByName("objectivesPanel").z = 150;
+		Engine.GetGUIObjectByName("objectivesTitle").font = "sans-bold-16";
+		Engine.GetGUIObjectByName("gameDescriptionText").font = "sans-stroke-16";
+		for (let i = 0; i < 18; i++)
+			Engine.GetGUIObjectByName("dev_command_label[" + i + "]").font = "sans-stroke-18";
+	}
+
+	updateShortGameInfoLabel() {
+		this.mapCache = new MapCache();
+		this.shortGameInfoLabel.caption = Engine.IsAtlasRunning() ? "" : sprintf("%(icon_alpha)s %(AlphaText)s  %(icon_map)s %(mapName)s%(mapSize)s%(biome)s  %(icon_pop)s %(pop)s%(duration)s%(rating)s", {
+			"icon_alpha": '[icon="icon_alpha" displace="0 4"]',
+			"AlphaText": g_ProjectInformation.productDescription.caption.match(/A[a-zA-Z ]+/),
+			"icon_map": '[icon="icon_map" displace="0 6"]',
+			"mapName": this.mapCache.translateMapName(this.mapCache.getTranslatableMapName(g_InitAttributes.mapType, g_InitAttributes.map)),
+			"mapSize": g_InitAttributes.mapType == "random" ? " - " + g_MapSizes.Name[g_MapSizes.Tiles.indexOf(g_InitAttributes.settings.Size)] : "",
+			"biome": g_InitAttributes.settings.Biome ? " - " + g_Settings.Biomes.find(b => b.Id == g_InitAttributes.settings.Biome).Title : "",
+			"icon_pop": '[icon="icon_pop" displace="2 5"]',
+			"pop": g_InitAttributes.settings.PopulationCap !== undefined ? g_PopulationCapacities.Title[g_PopulationCapacities.Population.indexOf(g_InitAttributes.settings.PopulationCap)] : g_WorldPopulationCapacities.Title[g_WorldPopulationCapacities.Population.indexOf(g_InitAttributes.settings.WorldPopulationCap)] + " (WP)",
+			"rating": g_InitAttributes.settings.RatingEnabled === true ? '  [icon="icon_rating" displace="-3 5"]' + coloredText("Rated", "red") : "",
+			"duration": (Engine.ConfigDB_GetValue("user", "boongui.showduration") == "true" && g_IsReplay) ? '  [icon="icon_duration" displace="1 3"] ' + this.durationReplay() : ""
+		});
+		this.shortGameInfoLabel.tooltip = g_ProjectInformation.productDescription.caption;
+	}
+
+	durationReplay() {
+		// Retrieve the duration of a replay
+		// normal case: metadata.json is available.
+		// unusual case: commands.txt no metadata.json is available, but located in the "0ad replay" folder. The duration is stored in the user.cfg file at startup.
+		// edge case: replay is started from command line, replay is outside "0ad replay" folder or inside "0ad replay" folder but no metadata.json --> unknown.
+		const directory = Engine.GetCurrentReplayDirectory();
+		if (Engine.HasReplayMetadata(directory))
+			return timeToString(Engine.GetReplayMetadata(directory).timeElapsed);
+		else if (g_InitAttributes.matchID === Engine.ConfigDB_GetValue("user", this.replayConfigName[0]))
+			return timeToString(Engine.ConfigDB_GetValue("user", this.replayConfigName[1]) * 1000);
+		return "unknown";
+	}
+	hide() {
+		this.statsModes.hide();
+	}
+	display() {
+		this.statsModes.display();
+	}
+}
+
+ProGUIStats.prototype.IncomeRateBufferSize = 50;
+ProGUIStats.prototype.configName = ["boongui.observer.toppanel", "boongui.player.toppanel", "boongui.statsmode"];
+ProGUIStats.prototype.replayConfigName = ["boongui.replay.matchID", "boongui.replay.duration"];
+

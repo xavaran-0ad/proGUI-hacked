@@ -1,0 +1,88 @@
+{
+  "categories": {
+    "boonGUI": {
+      "name": "ProGUI",
+      "desc": "ProGUI related hotkeys."
+    }
+  },
+  "mapped_hotkeys": {
+    "boonGUI": {
+      "boonGUI.camera.follow.fps": {
+        "name": "ProGUI Camera follow FPS",
+        "desc": "ProGUI Camera follow FPS."
+      },
+      "boonGUI.session.gui.exit": {
+        "name": "ProGUI Session GUI exit",
+        "desc": "ProGUI Session GUI exit."
+      },
+      "boonGUI.session.stats.toggle": {
+        "name": "ProGUI Session stats toggle",
+        "desc": "ProGUI Session stats toggle."
+      },
+      "boonGUI.session.stats.mode.1": {
+        "name": "ProGUI train unit 1",
+        "desc": "ProGUI train unit 1."
+      },
+      "boonGUI.session.stats.mode.2": {
+        "name": "ProGUI train unit 2",
+        "desc": "ProGUI train unit 2."
+      },
+      "boonGUI.session.stats.mode.3": {
+        "name": "ProGUI train unit 3",
+        "desc": "ProGUI train unit 3."
+      },
+      "boonGUI.session.stats.mode.4": {
+        "name": "ProGUI train unit 4",
+        "desc": "ProGUI train unit 4."
+      },
+      "boonGUI.session.stats.mode.5": {
+        "name": "ProGUI train unit 5",
+        "desc": "ProGUI train unit 5."
+      },
+      "boonGUI.session.stats.mode.6": {
+        "name": "ProGUI train unit 6",
+        "desc": "ProGUI train unit 6."
+      },
+      "boonGUI.session.stats.mode.7": {
+        "name": "ProGUI train unit 7",
+        "desc": "ProGUI train unit 7."
+      },
+      "boonGUI.session.stats.mode.8": {
+        "name": "ProGUI train unit 8",
+        "desc": "ProGUI train unit 8."
+      },
+      "boonGUI.session.stats.mode.9": {
+        "name": "ProGUI train unit 9",
+        "desc": "ProGUI train unit 9."
+      },
+      "boonGUI.session.stats.mode.10": {
+        "name": "ProGUI train unit 10",
+        "desc": "ProGUI train unit 10."
+      },
+      "boongui.session.stats.hideAlliesStats": {
+        "name": "BoonGUI hide allies Stats",
+        "desc": "BoonGUI TopPanel hide allies Stats."
+      },
+      "progui.session.controlPanel.1": {
+        "name": "On/Off trainer",
+        "desc": "ProGUI On/Off trainer"
+      },
+      "progui.session.controlPanel.2": {
+        "name": "On/Off Forge Queue",
+        "desc": "ProGUI On/Off Forge Queue"
+      },
+      "progui.session.controlPanel.3": {
+        "name": "On/Off Eco researchs",
+        "desc": "ProGUI On/Off Eco researchs"
+      },
+      "progui.session.controlPanel.4": {
+        "name": "On/Off Tributes",
+        "desc": "ProGUI On/Off Tributes"
+      },
+      "progui.session.controlPanel.9": {
+        "name": "ProGUI (Pause all until) Next Phase",
+        "desc": "Pause all proGUI productions and helpers until it can research next phase"
+      }
+    }
+  }
+}

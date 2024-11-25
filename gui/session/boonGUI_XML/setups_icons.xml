@@ -1,0 +1,2816 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<setup>
+  <!-- ================================  ================================ -->
+  <!-- Emblems -->
+  <!-- ================================  ================================ -->
+  <icon
+    name="emblem_seleucids"
+    sprite="stretched:session/portraits/emblems/emblem_seleucids.png"
+    size="50 50"
+  />
+  <icon
+    name="emblem_ptolemies"
+    sprite="stretched:session/portraits/emblems/emblem_ptolemies.png"
+    size="50 50"
+  />
+  <icon
+    name="emblem_suebians"
+    sprite="stretched:session/portraits/emblems/emblem_suebians.png"
+    size="50 50"
+  />
+  <icon
+    name="emblem_britons"
+    sprite="stretched:session/portraits/emblems/emblem_britons.png"
+    size="50 50"
+  />
+  <icon
+    name="emblem_britons"
+    sprite="stretched:session/portraits/emblems/emblem_britons.png"
+    size="50 50"
+  />
+  <icon
+    name="emblem_mauryas"
+    sprite="stretched:session/portraits/emblems/emblem_mauryas.png"
+    size="50 50"
+  />
+  <icon
+    name="emblem_macedonians"
+    sprite="stretched:session/portraits/emblems/emblem_macedonians.png"
+    size="50 50"
+  />
+  <icon
+    name="emblem_thebans"
+    sprite="stretched:session/portraits/emblems/emblem_thebans.png"
+    size="50 50"
+  />
+  <icon
+    name="emblem_goths"
+    sprite="stretched:session/portraits/emblems/emblem_goths.png"
+    size="50 50"
+  />
+  <icon
+    name="emblem_principates"
+    sprite="stretched:session/portraits/emblems/emblem_principates.png"
+    size="50 50"
+  />
+  <icon
+    name="emblem_athenians"
+    sprite="stretched:session/portraits/emblems/emblem_athenians.png"
+    size="50 50"
+  />
+  <icon
+    name="emblem_scythians"
+    sprite="stretched:session/portraits/emblems/emblem_scythians.png"
+    size="50 50"
+  />
+  <icon
+    name="emblem_epirotes"
+    sprite="stretched:session/portraits/emblems/emblem_epirotes.png"
+    size="50 50"
+  />
+  <icon
+    name="emblem_zapotecs"
+    sprite="stretched:session/portraits/emblems/emblem_zapotecs.png"
+    size="50 50"
+  />
+  <icon
+    name="emblem_celts"
+    sprite="stretched:session/portraits/emblems/emblem_celts.png"
+    size="50 50"
+  />
+  <icon
+    name="emblem_iberians"
+    sprite="stretched:session/portraits/emblems/emblem_iberians.png"
+    size="50 50"
+  />
+  <icon
+    name="emblem_carthaginians"
+    sprite="stretched:session/portraits/emblems/emblem_carthaginians.png"
+    size="50 50"
+  />
+  <icon
+    name="emblem_nobas"
+    sprite="stretched:session/portraits/emblems/emblem_nobas.png"
+    size="50 50"
+  />
+  <icon
+    name="emblem_xiongnu"
+    sprite="stretched:session/portraits/emblems/emblem_xiongnu.png"
+    size="50 50"
+  />
+  <icon
+    name="emblem_celts"
+    sprite="stretched:session/portraits/emblems/emblem_celts.png"
+    size="50 50"
+  />
+  <icon
+    name="emblem_spartans"
+    sprite="stretched:session/portraits/emblems/emblem_spartans.png"
+    size="50 50"
+  />
+  <icon
+    name="emblem_romans"
+    sprite="stretched:session/portraits/emblems/emblem_romans.png"
+    size="50 50"
+  />
+  <icon
+    name="emblem_han"
+    sprite="stretched:session/portraits/emblems/emblem_han.png"
+    size="50 50"
+  />
+  <icon
+    name="emblem_kushites"
+    sprite="stretched:session/portraits/emblems/emblem_kushites.png"
+    size="50 50"
+  />
+  <icon
+    name="emblem_xiongnu"
+    sprite="stretched:session/portraits/emblems/emblem_xiongnu.png"
+    size="50 50"
+  />
+  <icon
+    name="emblem_persians"
+    sprite="stretched:session/portraits/emblems/emblem_persians.png"
+    size="50 50"
+  />
+  <icon
+    name="emblem_east"
+    sprite="stretched:session/portraits/emblems/emblem_east.png"
+    size="50 50"
+  />
+  <icon
+    name="emblem_west"
+    sprite="stretched:session/portraits/emblems/emblem_west.png"
+    size="50 50"
+  />
+  <icon
+    name="emblem_step"
+    sprite="stretched:session/portraits/emblems/emblem_step.png"
+    size="50 50"
+  />
+  <!-- ================================  ================================ -->
+  <!-- Tech icons -->
+  <!-- ================================  ================================ -->
+  <icon
+    name="icon_gather_farming_harvester"
+    sprite="stretched:session/portraits/technologies/gallic_plow.png"
+    size="25 25"
+  />
+  <icon
+    name="icon_gather_farming_fertilizer"
+    sprite="stretched:session/portraits/technologies/olives.png"
+    size="25 25"
+  />
+  <icon
+    name="icon_gather_animals_stockbreeding"
+    sprite="stretched:session/portraits/technologies/meat.png"
+    size="25 25"
+  />
+
+  <icon
+    name="icon_gather_capacity_basket"
+    sprite="stretched:session/portraits/technologies/gather_basket_empty.png"
+    size="25 25"
+  />
+  <icon
+    name="icon_gather_capacity_wheelbarrow"
+    sprite="stretched:session/portraits/technologies/wheelbarrow_empty.png"
+    size="25 25"
+  />
+  <icon
+    name="icon_gather_capacity_carts"
+    sprite="stretched:session/portraits/technologies/handcart_empty.png"
+    size="25 25"
+  />
+
+  <icon
+    name="icon_gather_lumbering_ironaxes"
+    sprite="stretched:session/portraits/technologies/wood_axe_01.png"
+    size="25 25"
+  />
+  <icon
+    name="icon_gather_lumbering_strongeraxes"
+    sprite="stretched:session/portraits/technologies/wood_axe_02.png"
+    size="25 25"
+  />
+  <icon
+    name="icon_gather_lumbering_sharpaxes"
+    sprite="stretched:session/portraits/technologies/wood_axe_03.png"
+    size="25 25"
+  />
+
+  <icon
+    name="icon_gather_mining_servants"
+    sprite="stretched:session/portraits/technologies/mining_stone_01.png"
+    size="25 25"
+  />
+  <icon
+    name="icon_gather_mining_serfs"
+    sprite="stretched:session/portraits/technologies/mining_stone_02.png"
+    size="25 25"
+  />
+  <icon
+    name="icon_gather_mining_slaves"
+    sprite="stretched:session/portraits/technologies/mining_stone_03.png"
+    size="25 25"
+  />
+
+  <icon
+    name="icon_gather_mining_wedgemallet"
+    sprite="stretched:session/portraits/technologies/mining_metal_01.png"
+    size="25 25"
+  />
+  <icon
+    name="icon_gather_mining_shaftmining"
+    sprite="stretched:session/portraits/technologies/mining_metal_02.png"
+    size="25 25"
+  />
+  <icon
+    name="icon_gather_mining_silvermining"
+    sprite="stretched:session/portraits/technologies/mining_metal_03.png"
+    size="25 25"
+  />
+
+  <icon
+    name="icon_soldier_attack_melee_01"
+    sprite="stretched:session/portraits/technologies/sword_01.png"
+    size="25 25"
+  />
+  <icon
+    name="icon_soldier_attack_melee_02"
+    sprite="stretched:session/portraits/technologies/sword_02.png"
+    size="25 25"
+  />
+  <icon
+    name="icon_soldier_attack_melee_03"
+    sprite="stretched:session/portraits/technologies/sword_03.png"
+    size="25 25"
+  />
+  <icon
+    name="icon_soldier_attack_melee_03_variant"
+    sprite="stretched:session/portraits/technologies/metalworker.png"
+    size="25 25"
+  />
+
+  <icon
+    name="icon_soldier_attack_ranged_01"
+    sprite="stretched:session/portraits/technologies/arrow_01.png"
+    size="25 25"
+  />
+  <icon
+    name="icon_soldier_attack_ranged_02"
+    sprite="stretched:session/portraits/technologies/arrow_02.png"
+    size="25 25"
+  />
+  <icon
+    name="icon_soldier_attack_ranged_03"
+    sprite="stretched:session/portraits/technologies/arrow_03.png"
+    size="25 25"
+  />
+
+  <icon
+    name="icon_soldier_resistance_hack_01"
+    sprite="stretched:session/portraits/technologies/armor_leather.png"
+    size="25 25"
+  />
+  <icon
+    name="icon_soldier_resistance_hack_02"
+    sprite="stretched:session/portraits/technologies/armor_pteruges.png"
+    size="25 25"
+  />
+  <icon
+    name="icon_soldier_resistance_hack_03"
+    sprite="stretched:session/portraits/technologies/armor_chain.png"
+    size="25 25"
+  />
+
+  <icon
+    name="icon_soldier_resistance_pierce_01"
+    sprite="stretched:session/portraits/technologies/shields_generic_wood.png"
+    size="25 25"
+  />
+  <icon
+    name="icon_soldier_resistance_pierce_02"
+    sprite="stretched:session/portraits/technologies/shields_generic_bronze.png"
+    size="25 25"
+  />
+  <icon
+    name="icon_soldier_resistance_pierce_03"
+    sprite="stretched:session/portraits/technologies/shields_generic_silver.png"
+    size="25 25"
+  />
+
+  <icon
+    name="icon_attack_soldiers_will"
+    sprite="stretched:session/portraits/technologies/clenched_fist.png"
+    size="25 25"
+  />
+  <icon
+    name="icon_archery_tradition"
+    sprite="stretched:session/portraits/technologies/archery_tradition.png"
+    size="25 25"
+  />
+  <icon
+    name="icon_archer_attack_spread"
+    sprite="stretched:session/portraits/technologies/archery_tradition.png"
+    size="25 25"
+  />
+
+  <!-- ================================  ================================ -->
+  <!-- Observer mode -->
+  <!-- ================================  ================================ -->
+  <icon
+    name="icon_alpha"
+    sprite="grayscale:stretched:session/icons/0ad_alpha_logo.png"
+    size="18 18"
+  />
+  <icon
+    name="icon_map"
+    sprite="grayscale:stretched:session/icons/objectives.png"
+    size="18 20"
+  />
+  <icon
+    name="icon_pop"
+    sprite="grayscale:stretched:session/icons/population_special_adjustment_build_label.png"
+    size="18 18"
+  />
+  <icon
+    name="icon_duration"
+    sprite="grayscale:stretched:session/icons/icon_duration.png"
+    size="18 18"
+  />
+  <icon
+    name="icon_rating"
+    sprite="stretched:session/icons/bell_level1.png"
+    size="18 18"
+  />
+
+  <icon
+    name="icon_gather_wicker_baskets"
+    sprite="stretched:session/portraits/technologies/gather_basket.png"
+    size="25 25"
+  />
+  <icon
+    name="icon_gather_farming_training"
+    sprite="stretched:session/portraits/technologies/farming_training.png"
+    size="25 25"
+  />
+  <icon
+    name="icon_gather_farming_plows"
+    sprite="stretched:session/portraits/technologies/plow.png"
+    size="25 25"
+  />
+  <icon
+    name="icon_focusattacked"
+    sprite="stretched:session/icons/focus-attacked.png"
+    size="14 14"
+  />
+  <icon
+    name="icon_gather_farming_seed_drill"
+    sprite="stretched:session/portraits/technologies/torsion_springs.png"
+    size="25 25"
+  />
+  <icon
+    name="icon_gather_farming_water_weeding"
+    sprite="stretched:session/portraits/technologies/irrigation.png"
+    size="25 25"
+  />
+  <icon
+    name="icon_gather_farming_chain_pump"
+    sprite="stretched:session/portraits/technologies/flood_control.png"
+    size="25 25"
+  /><!--
+  <icon
+    name="units/flaming_pig"
+    sprite="stretched:session/portraits/units/flaming_pig.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/catafalque"
+    sprite="stretched:session/portraits/units/catafalque.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/noldor_ship_bireme"
+    sprite="stretched:session/portraits/units/noldor_ship_bireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/viking_longship"
+    sprite="stretched:session/portraits/units/viking_longship.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/celt/support_healer"
+    sprite="stretched:session/portraits/units/celt_support_healer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/celt/support_trader"
+    sprite="stretched:session/portraits/units/celt_support_trader.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/celt/ship_merchant"
+    sprite="stretched:session/portraits/units/celt_ship_merchant.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/celt/support_female_citizen"
+    sprite="stretched:session/portraits/units/celt_support_female_citizen.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/celt/siege_ram"
+    sprite="stretched:session/portraits/units/celt_siege_ram.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/celt/ship_trireme"
+    sprite="stretched:session/portraits/units/celt_ship_trireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/celt/ship_fishing"
+    sprite="stretched:session/portraits/units/celt_ship_fishing.png"
+    size="25 25"
+  />
+
+    <icon
+    name="units/gaul/support_healer"
+    sprite="stretched:session/portraits/units/celt_support_healer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/gaul/support_trader"
+    sprite="stretched:session/portraits/units/celt_support_trader.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/gaul/ship_merchant"
+    sprite="stretched:session/portraits/units/celt_ship_merchant.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/gaul/support_female_citizen"
+    sprite="stretched:session/portraits/units/celt_support_female_citizen.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/gaul/siege_ram"
+    sprite="stretched:session/portraits/units/celt_siege_ram.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/gaul/ship_trireme"
+    sprite="stretched:session/portraits/units/celt_ship_trireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/gaul/ship_fishing"
+    sprite="stretched:session/portraits/units/celt_ship_fishing.png"
+    size="25 25"
+  />
+
+
+    <icon
+    name="units/brit/support_healer"
+    sprite="stretched:session/portraits/units/celt_support_healer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/brit/support_trader"
+    sprite="stretched:session/portraits/units/celt_support_trader.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/brit/ship_merchant"
+    sprite="stretched:session/portraits/units/celt_ship_merchant.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/brit/support_female_citizen"
+    sprite="stretched:session/portraits/units/celt_support_female_citizen.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/brit/siege_ram"
+    sprite="stretched:session/portraits/units/celt_siege_ram.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/brit/ship_trireme"
+    sprite="stretched:session/portraits/units/celt_ship_trireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/brit/ship_fishing"
+    sprite="stretched:session/portraits/units/celt_ship_fishing.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/iber/support_healer"
+    sprite="stretched:session/portraits/units/celt_support_healer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/iber/ship_fire"
+    sprite="stretched:session/portraits/units/celt_ship_fire.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/iber/cavalry_javelineer"
+    sprite="stretched:session/portraits/units/celt_cavalry_javelinist.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/iber/hero_indibil"
+    sprite="stretched:session/portraits/units/celt_hero_indibil.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/iber/support_trader"
+    sprite="stretched:session/portraits/units/celt_support_trader.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/iber/hero_viriato"
+    sprite="stretched:session/portraits/units/celt_hero_viriato.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/iber/ship_merchant"
+    sprite="stretched:session/portraits/units/celt_ship_merchant.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/iber/support_female_citizen"
+    sprite="stretched:session/portraits/units/celt_support_female_citizen.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/iber/infantry_spearman"
+    sprite="stretched:session/portraits/units/celt_infantry_spearman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/iber/cavalry_spearman"
+    sprite="stretched:session/portraits/units/celt_cavalry_spearman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/iber/hero_caros"
+    sprite="stretched:session/portraits/units/celt_hero_caros.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/iber/champion_infantry"
+    sprite="stretched:session/portraits/units/celt_champion_infantry.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/iber/siege_ram"
+    sprite="stretched:session/portraits/units/celt_siege_ram.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/iber/champion_cavalry"
+    sprite="stretched:session/portraits/units/celt_champion_cavalry.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/iber/infantry_javelineer"
+    sprite="stretched:session/portraits/units/celt_infantry_javelinist.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/iber/infantry_slinger"
+    sprite="stretched:session/portraits/units/celt_infantry_slinger.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/iber/infantry_swordsman"
+    sprite="stretched:session/portraits/units/celt_infantry_swordsman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/iber/ship_fishing"
+    sprite="stretched:session/portraits/units/celt_ship_fishing.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/champion_marine"
+    sprite="stretched:session/portraits/units/athen_champion_marine.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/cavalry_swordsman"
+    sprite="stretched:session/portraits/units/athen_cavalry_swordsman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/hero_themistocles"
+    sprite="stretched:session/portraits/units/athen_hero_themistocles.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/hero_iphicrates"
+    sprite="stretched:session/portraits/units/athen_hero_iphicrates.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/cavalry_javelineer"
+    sprite="stretched:session/portraits/units/athen_cavalry_javelinist.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/hero_pericles"
+    sprite="stretched:session/portraits/units/athen_hero_pericles.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/infantry_spearman"
+    sprite="stretched:session/portraits/units/athen_infantry_spearman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/ship_bireme"
+    sprite="stretched:session/portraits/units/athen_ship_bireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/hero_xenophon"
+    sprite="stretched:session/portraits/units/athen_hero_xenophon.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/champion_infantry"
+    sprite="stretched:session/portraits/units/athen_champion_infantry.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/siege_ram"
+    sprite="stretched:session/portraits/units/athen_siege_ram.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/ship_trireme"
+    sprite="stretched:session/portraits/units/athen_ship_trireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/champion_ranged"
+    sprite="stretched:session/portraits/units/athen_champion_ranged.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/hero_hippocrates"
+    sprite="stretched:session/portraits/units/athen_hero_hippocrates.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/infantry_javelineer"
+    sprite="stretched:session/portraits/units/athen_infantry_javelinist.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/infantry_slinger"
+    sprite="stretched:session/portraits/units/athen_infantry_slinger.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/ptol/support_healer"
+    sprite="stretched:session/portraits/units/ptol_support_healer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/ptol/hero_cleopatra"
+    sprite="stretched:session/portraits/units/ptol_hero_cleopatra.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/ptol/infantry_javelinist_merc"
+    sprite="stretched:session/portraits/units/ptol_infantry_javelinist_merc.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/ptol/ship_merchant"
+    sprite="stretched:session/portraits/units/ptol_ship_merchant.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/ptol/support_female_citizen"
+    sprite="stretched:session/portraits/units/ptol_support_female_citizen.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/ptol/infantry_spearman"
+    sprite="stretched:session/portraits/units/ptol_infantry_spearman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/ptol/infantry_spearman_2"
+    sprite="stretched:session/portraits/units/ptol_infantry_spearman_2.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/ptol/cavalry_spearman"
+    sprite="stretched:session/portraits/units/ptol_cavalry_spearman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/ptol/ship_quinquereme"
+    sprite="stretched:session/portraits/units/ptol_ship_quinquereme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/ptol/ship_bireme"
+    sprite="stretched:session/portraits/units/ptol_ship_bireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/ptol/champion_elephant"
+    sprite="stretched:session/portraits/units/ptol_champion_elephant.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/ptol/camel_archer"
+    sprite="stretched:session/portraits/units/ptol_camel_archer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/ptol/champion_infantry"
+    sprite="stretched:session/portraits/units/ptol_champion_infantry.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/ptol/champion_cavalry"
+    sprite="stretched:session/portraits/units/ptol_champion_cavalry.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/ptol/hero_ptolemy_I"
+    sprite="stretched:session/portraits/units/ptol_hero_ptolemy_I.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/ptol/ship_trireme"
+    sprite="stretched:session/portraits/units/ptol_ship_trireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/ptol/hero_ptolemy_IV"
+    sprite="stretched:session/portraits/units/ptol_hero_ptolemy_IV.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/ptol/champion_infantry_ranged_gastraphetes"
+    sprite="stretched:session/portraits/units/ptol_champion_infantry_ranged_gastraphetes.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/ptol/infantry_slinger"
+    sprite="stretched:session/portraits/units/ptol_infantry_slinger.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/ptol/infantry_archer"
+    sprite="stretched:session/portraits/units/ptol_infantry_archer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/ptol/ship_fishing"
+    sprite="stretched:session/portraits/units/ptol_ship_fishing.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/hero_agis"
+    sprite="stretched:session/portraits/units/spart_hero_agis.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/hero_brasidas"
+    sprite="stretched:session/portraits/units/spart_hero_brasidas.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/champion_infantry_pike"
+    sprite="stretched:session/portraits/units/spart_champion_infantry_pike.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/cavalry_javelineer"
+    sprite="stretched:session/portraits/units/spart_cavalry_javelinist.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/support_female_citizen"
+    sprite="stretched:session/portraits/units/spart_support_female_citizen.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/infantry_spearman"
+    sprite="stretched:session/portraits/units/spart_infantry_spearman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/cavalry_spearman"
+    sprite="stretched:session/portraits/units/spart_cavalry_spearman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/hero_leonidas_300"
+    sprite="stretched:session/portraits/units/spart_hero_leonidas_300.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/champion_infantry_sword"
+    sprite="stretched:session/portraits/units/spart_champion_infantry_sword.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/infantry_pikeman"
+    sprite="stretched:session/portraits/units/spart_infantry_pikeman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/infantry_spearman_neodamodes"
+    sprite="stretched:session/portraits/units/spart_infantry_spearman_neodamodes.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/siege_ram"
+    sprite="stretched:session/portraits/units/spart_siege_ram.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/hero_leonidas"
+    sprite="stretched:session/portraits/units/spart_hero_leonidas.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/champion_infantry_olympian"
+    sprite="stretched:session/portraits/units/spart_champion_infantry_olympian.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/champion_infantry_spear"
+    sprite="stretched:session/portraits/units/spart_champion_infantry_spear.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/infantry_javelineer"
+    sprite="stretched:session/portraits/units/spart_infantry_javelinist.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/infantry_slinger"
+    sprite="stretched:session/portraits/units/spart_infantry_slinger.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/champion_infantry_commando"
+    sprite="stretched:session/portraits/units/spart_champion_infantry_commando.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/maur/support_elephant"
+    sprite="stretched:session/portraits/units/maur_support_elephant.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/maur/cavalry_swordsman"
+    sprite="stretched:session/portraits/units/maur_cavalry_swordsman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/maur/support_healer"
+    sprite="stretched:session/portraits/units/maur_support_healer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/maur/hero_chandragupta"
+    sprite="stretched:session/portraits/units/maur_hero_chandragupta.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/maur/hero_chanakya"
+    sprite="stretched:session/portraits/units/maur_hero_chanakya.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/maur/cavalry_javelineer"
+    sprite="stretched:session/portraits/units/maur_cavalry_javelinist.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/maur/support_trader"
+    sprite="stretched:session/portraits/units/maur_support_trader.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/maur/champion_maiden"
+    sprite="stretched:session/portraits/units/maur_champion_maiden.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/maur/ship_merchant"
+    sprite="stretched:session/portraits/units/maur_ship_merchant.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/maur/support_female_citizen"
+    sprite="stretched:session/portraits/units/maur_support_female_citizen.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/maur/elephant_archer"
+    sprite="stretched:session/portraits/units/maur_elephant_archer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/maur/infantry_spearman"
+    sprite="stretched:session/portraits/units/maur_infantry_spearman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/maur/ship_bireme"
+    sprite="stretched:session/portraits/units/maur_ship_bireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/maur/champion_elephant"
+    sprite="stretched:session/portraits/units/maur_champion_elephant.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/maur/hero_ashoka"
+    sprite="stretched:session/portraits/units/maur_hero_ashoka.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/maur/siege_ram"
+    sprite="stretched:session/portraits/units/maur_siege_ram.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/maur/champion_chariot"
+    sprite="stretched:session/portraits/units/maur_champion_chariot.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/maur/champion_maiden_archer"
+    sprite="stretched:session/portraits/units/maur_champion_maiden_archer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/maur/champion_maceman"
+    sprite="stretched:session/portraits/units/maur_champion_maceman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/maur/champion_maiden_archer_fire"
+    sprite="stretched:session/portraits/units/maur_champion_maiden_archer_fire.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/maur/ship_trireme"
+    sprite="stretched:session/portraits/units/maur_ship_trireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/maur/infantry_swordsman"
+    sprite="stretched:session/portraits/units/maur_infantry_swordsman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/maur/infantry_archer"
+    sprite="stretched:session/portraits/units/maur_infantry_archer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/maur/ship_fishing"
+    sprite="stretched:session/portraits/units/maur_ship_fishing.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/cart/cavalry_swordsman"
+    sprite="stretched:session/portraits/units/cart_cavalry_swordsman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/cart/support_healer"
+    sprite="stretched:session/portraits/units/cart_support_healer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/cart/siege_ballista"
+    sprite="stretched:session/portraits/units/cart_siege_ballista.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/cart/infantry_swordsman_2"
+    sprite="stretched:session/portraits/units/cart_infantry_swordsman_2.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/cart/cavalry_javelineer"
+    sprite="stretched:session/portraits/units/cart_cavalry_javelinist.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/cart/support_trader"
+    sprite="stretched:session/portraits/units/cart_support_trader.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/cart/hero_hannibal"
+    sprite="stretched:session/portraits/units/cart_hero_hannibal.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/cart/siege_oxybeles_packed"
+    sprite="stretched:session/portraits/units/cart_siege_oxybeles_packed.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/cart/ship_merchant"
+    sprite="stretched:session/portraits/units/cart_ship_merchant.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/cart/support_female_citizen"
+    sprite="stretched:session/portraits/units/cart_support_female_citizen.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/cart/hero_hamilcar"
+    sprite="stretched:session/portraits/units/cart_hero_hamilcar.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/cart/infantry_spearman"
+    sprite="stretched:session/portraits/units/cart_infantry_spearman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/cart/cavalry_swordsman_2"
+    sprite="stretched:session/portraits/units/cart_cavalry_swordsman_2.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/cart/cavalry_spearman"
+    sprite="stretched:session/portraits/units/cart_cavalry_spearman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/cart/ship_quinquereme"
+    sprite="stretched:session/portraits/units/cart_ship_quinquereme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/cart/ship_bireme"
+    sprite="stretched:session/portraits/units/cart_ship_bireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/cart/champion_elephant"
+    sprite="stretched:session/portraits/units/cart_champion_elephant.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/cart/champion_infantry"
+    sprite="stretched:session/portraits/units/cart_champion_infantry.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/cart/hero_maharbal"
+    sprite="stretched:session/portraits/units/cart_hero_maharbal.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/cart/siege_oxybeles"
+    sprite="stretched:session/portraits/units/cart_siege_oxybeles.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/cart/siege_ballista_packed"
+    sprite="stretched:session/portraits/units/cart_siege_ballista_packed.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/cart/champion_cavalry"
+    sprite="stretched:session/portraits/units/cart_champion_cavalry.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/cart/ship_trireme"
+    sprite="stretched:session/portraits/units/cart_ship_trireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/cart/infantry_javelineer"
+    sprite="stretched:session/portraits/units/cart_infantry_javelinist.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/cart/infantry_slinger"
+    sprite="stretched:session/portraits/units/cart_infantry_slinger.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/cart/infantry_swordsman"
+    sprite="stretched:session/portraits/units/cart_infantry_swordsman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/cart/infantry_archer"
+    sprite="stretched:session/portraits/units/cart_infantry_archer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/argyraspidai"
+    sprite="stretched:session/portraits/units/mace_argyraspidai.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/champion_infantry_crossbowman"
+    sprite="stretched:session/portraits/units/mace_champion_infantry_crossbowman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/cavalry_javelineer"
+    sprite="stretched:session/portraits/units/mace_cavalry_javelinist.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/hero_philip"
+    sprite="stretched:session/portraits/units/mace_hero_philip.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/hero_demetrius"
+    sprite="stretched:session/portraits/units/mace_hero_demetrius.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/hero_craterus"
+    sprite="stretched:session/portraits/units/mace_hero_craterus.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/cavalry_spearman"
+    sprite="stretched:session/portraits/units/mace_cavalry_spearman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/cavalry_spearman_merc"
+    sprite="stretched:session/portraits/units/mace_cavalry_spearman_merc.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/hero_pyrrhus"
+    sprite="stretched:session/portraits/units/mace_hero_pyrrhus.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/champion_infantry"
+    sprite="stretched:session/portraits/units/mace_champion_infantry.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/infantry_pikeman"
+    sprite="stretched:session/portraits/units/mace_infantry_pikeman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/siege_ram"
+    sprite="stretched:session/portraits/units/mace_siege_ram.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/champion_cavalry"
+    sprite="stretched:session/portraits/units/mace_champion_cavalry.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/ship_trireme"
+    sprite="stretched:session/portraits/units/mace_ship_trireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/hypaspist"
+    sprite="stretched:session/portraits/units/mace_hypaspist.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/hero_alexander"
+    sprite="stretched:session/portraits/units/mace_hero_alexander.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/infantry_javelineer"
+    sprite="stretched:session/portraits/units/mace_infantry_javelinist.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/infantry_slinger"
+    sprite="stretched:session/portraits/units/mace_infantry_slinger.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/thureophoros"
+    sprite="stretched:session/portraits/units/mace_thureophoros.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/infantry_archer"
+    sprite="stretched:session/portraits/units/mace_infantry_archer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/thorakites"
+    sprite="stretched:session/portraits/units/mace_thorakites.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/thrac/champion_infantry_swordsman"
+    sprite="stretched:session/portraits/units/thrac_champion_infantry_swordsman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/theb/siege_fireraiser"
+    sprite="stretched:session/portraits/units/theb_siege_fireraiser.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/theb/champion_infantry_swordsman"
+    sprite="stretched:session/portraits/units/theb_champion_infantry_swordsman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/theb/champion_infantry_hoplite"
+    sprite="stretched:session/portraits/units/theb_champion_infantry_hoplite.png"
+    size="25 25"
+  />
+  <icon
+    name="units/ptol/infantry_pikeman"
+    sprite="stretched:session/portraits/units/ptol_infantry_pikeman.png"
+    size="25 25"
+  />
+  <icon
+    name="units/sele/infantry_pikeman"
+    sprite="stretched:session/portraits/units/sele_infantry_pikeman.png"
+    size="25 25"
+  />
+  <icon
+    name="units/sele/hero_seleucus"
+    sprite="stretched:session/portraits/units/sele_hero_seleucus.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/sele/cavalry_javelineer"
+    sprite="stretched:session/portraits/units/sele_cavalry_javelinist.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/sele/infantry_javelinist_merc"
+    sprite="stretched:session/portraits/units/sele_infantry_javelinist_merc.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/sele/cavalry_militia"
+    sprite="stretched:session/portraits/units/sele_cavalry_militia.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/sele/champion_pikeman"
+    sprite="stretched:session/portraits/units/sele_champion_pikeman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/sele/hero_antiochus_the_great"
+    sprite="stretched:session/portraits/units/sele_hero_antiochus_the_great.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/sele/infantry_spearman"
+    sprite="stretched:session/portraits/units/sele_infantry_spearman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/sele/infantry_spearman_2"
+    sprite="stretched:session/portraits/units/sele_infantry_spearman_2.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/sele/cavalry_spearman"
+    sprite="stretched:session/portraits/units/sele_cavalry_spearman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/sele/champion_elephant"
+    sprite="stretched:session/portraits/units/sele_champion_elephant.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/sele/champion_swordsman"
+    sprite="stretched:session/portraits/units/sele_champion_swordsman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/sele/hero_antiochus_the_righteous"
+    sprite="stretched:session/portraits/units/sele_hero_antiochus_the_righteous.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/sele/cavalry_spearman_merc"
+    sprite="stretched:session/portraits/units/sele_cavalry_spearman_merc.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/sele/champion_chariot"
+    sprite="stretched:session/portraits/units/sele_champion_chariot.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/sele/champion_cavalry"
+    sprite="stretched:session/portraits/units/sele_champion_cavalry.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/sele/support_female_citizen"
+    sprite="stretched:session/portraits/units/sele_support_female.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/sele/infantry_javelineer"
+    sprite="stretched:session/portraits/units/sele_infantry_javelinist.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/sele/infantry_swordsman"
+    sprite="stretched:session/portraits/units/sele_infantry_swordsman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/sele/infantry_archer"
+    sprite="stretched:session/portraits/units/sele_infantry_archer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/support_healer"
+    sprite="stretched:session/portraits/units/rome_support_healer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/siege_ballista"
+    sprite="stretched:session/portraits/units/rome_siege_ballista.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/hero_scipio"
+    sprite="stretched:session/portraits/units/rome_hero_scipio.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/cavalry_javelineer"
+    sprite="stretched:session/portraits/units/rome_cavalry_javelinist.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/support_trader"
+    sprite="stretched:session/portraits/units/rome_support_trader.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/hero_marcellus"
+    sprite="stretched:session/portraits/units/rome_hero_marcellus.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/ship_merchant"
+    sprite="stretched:session/portraits/units/rome_ship_merchant.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/support_female_citizen"
+    sprite="stretched:session/portraits/units/rome_support_female_citizen.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/siege_scorpio"
+    sprite="stretched:session/portraits/units/rome_siege_scorpio.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/infantry_spearman"
+    sprite="stretched:session/portraits/units/rome_infantry_spearman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/cavalry_spearman"
+    sprite="stretched:session/portraits/units/rome_cavalry_spearman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/champion_legion_centurio"
+    sprite="stretched:session/portraits/units/rome_champion_legion_centurio.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/champion_infantry_centurion"
+    sprite="stretched:session/portraits/units/rome_champion_infantry_centurion.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/ship_quinquereme"
+    sprite="stretched:session/portraits/units/rome_ship_quinquereme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/ship_bireme"
+    sprite="stretched:session/portraits/units/rome_ship_bireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/infantry_spearman_militia"
+    sprite="stretched:session/portraits/units/rome_infantry_spearman_militia.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/champion_infantry_gladiator_spear"
+    sprite="stretched:session/portraits/units/rome_champion_infantry_gladiator_spear.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/champion_infantry"
+    sprite="stretched:session/portraits/units/rome_champion_infantry.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/champion_infantry_gladiator_sword"
+    sprite="stretched:session/portraits/units/rome_champion_infantry_gladiator_sword.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/siege_ballista_packed"
+    sprite="stretched:session/portraits/units/rome_siege_ballista_packed.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/siege_ram"
+    sprite="stretched:session/portraits/units/rome_siege_ram.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/champion_legion_marian"
+    sprite="stretched:session/portraits/units/rome_champion_legion_marian.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/champion_cavalry"
+    sprite="stretched:session/portraits/units/rome_champion_cavalry.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/siege_onager_packed"
+    sprite="stretched:session/portraits/units/rome_siege_onager_packed.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/siege_onager"
+    sprite="stretched:session/portraits/units/rome_siege_onager.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/ship_trireme"
+    sprite="stretched:session/portraits/units/rome_ship_trireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/champion_legion_imperial"
+    sprite="stretched:session/portraits/units/rome_champion_legion_imperial.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/hero_maximus"
+    sprite="stretched:session/portraits/units/rome_hero_maximus.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/siege_scorpio_packed"
+    sprite="stretched:session/portraits/units/rome_siege_scorpio_packed.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/infantry_javelineer"
+    sprite="stretched:session/portraits/units/rome_infantry_javelinist.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/rome/infantry_swordsman"
+    sprite="stretched:session/portraits/units/rome_infantry_swordsman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/samn/swordsman"
+    sprite="stretched:session/portraits/units/samn_swordsman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/samn/spearman"
+    sprite="stretched:session/portraits/units/samn_spearman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/samn/skirmisher"
+    sprite="stretched:session/portraits/units/samn_skirmisher.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/kush/champion_apedemak"
+    sprite="stretched:session/portraits/units/kush_champion_apedemak.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/kush/support_healer"
+    sprite="stretched:session/portraits/units/kush_support_healer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/kush/infantry_maceman"
+    sprite="stretched:session/portraits/units/kush_infantry_maceman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/kush/infantry_swordsman_2"
+    sprite="stretched:session/portraits/units/kush_infantry_swordsman_2.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/kush/hero_arakamani"
+    sprite="stretched:session/portraits/units/kush_hero_arakamani.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/kush/cavalry_javelineer"
+    sprite="stretched:session/portraits/units/kush_cavalry_javelinist.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/kush/support_trader"
+    sprite="stretched:session/portraits/units/kush_support_trader.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/kush/support_female_citizen"
+    sprite="stretched:session/portraits/units/kush_support_female_citizen.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/kush/infantry_spearman"
+    sprite="stretched:session/portraits/units/kush_infantry_spearman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/kush/cavalry_spearman"
+    sprite="stretched:session/portraits/units/kush_cavalry_spearman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/kush/champion_amun"
+    sprite="stretched:session/portraits/units/kush_champion_amun.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/kush/ship_bireme"
+    sprite="stretched:session/portraits/units/kush_ship_bireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/kush/champion_elephant"
+    sprite="stretched:session/portraits/units/kush_champion_elephant.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/kush/infantry_pikeman"
+    sprite="stretched:session/portraits/units/kush_infantry_pikeman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/kush/hero_amanirenas"
+    sprite="stretched:session/portraits/units/kush_hero_amanirenas.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/kush/champion_cavalry"
+    sprite="stretched:session/portraits/units/kush_champion_cavalry.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/kush/ship_trireme"
+    sprite="stretched:session/portraits/units/kush_ship_trireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/kush/champion_archer"
+    sprite="stretched:session/portraits/units/kush_champion_archer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/kush/camel_swordsman"
+    sprite="stretched:session/portraits/units/kush_camel_swordsman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/kush/infantry_javelineer"
+    sprite="stretched:session/portraits/units/kush_infantry_javelinist.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/kush/camel_javelinist"
+    sprite="stretched:session/portraits/units/kush_camel_javelinist.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/kush/infantry_swordsman"
+    sprite="stretched:session/portraits/units/kush_infantry_swordsman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/kush/infantry_archer"
+    sprite="stretched:session/portraits/units/kush_infantry_archer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/kush/hero_nastasen"
+    sprite="stretched:session/portraits/units/kush_hero_nastasen.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/kush/hero_harsiotef"
+    sprite="stretched:session/portraits/units/kush_hero_harsiotef.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/champion_infantry_crossbowman"
+    sprite="stretched:session/portraits/units/han/champion_infantry_crossbowman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/cavalry_swordsman"
+    sprite="stretched:session/portraits/units/han/cavalry_swordsman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/support_healer"
+    sprite="stretched:session/portraits/units/han/support_healer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/ship_fire"
+    sprite="stretched:session/portraits/units/han/ship_fire.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/support_trader"
+    sprite="stretched:session/portraits/units/han/support_trader.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/cavalry_crossbowman"
+    sprite="stretched:session/portraits/units/han/cavalry_crossbowman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/minister"
+    sprite="stretched:session/portraits/units/han/minister.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/ship_merchant"
+    sprite="stretched:session/portraits/units/han/ship_merchant.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/support_female_citizen"
+    sprite="stretched:session/portraits/units/han/support_female_citizen.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/siege_mangonel"
+    sprite="stretched:session/portraits/units/han/siege_mangonel.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/siege_boltshooter"
+    sprite="stretched:session/portraits/units/han/siege_boltshooter.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/champion_cavalry_crossbowman"
+    sprite="stretched:session/portraits/units/han/champion_cavalry_crossbowman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/infantry_spearman"
+    sprite="stretched:session/portraits/units/han/infantry_spearman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/cavalry_spearman"
+    sprite="stretched:session/portraits/units/han/cavalry_spearman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/ship_quinquereme"
+    sprite="stretched:session/portraits/units/han/ship_quinquereme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/ship_bireme"
+    sprite="stretched:session/portraits/units/han/ship_bireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/infantry_halberdman"
+    sprite="stretched:session/portraits/units/han/infantry_halberdman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/infantry_crossbowman"
+    sprite="stretched:session/portraits/units/han/infantry_crossbowman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/champion_infantry_archer"
+    sprite="stretched:session/portraits/units/han/champion_infantry_archer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/champion_infantry_swordsman"
+    sprite="stretched:session/portraits/units/han/champion_infantry_swordsman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/ship_trireme"
+    sprite="stretched:session/portraits/units/han/ship_trireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/siege_tower"
+    sprite="stretched:session/portraits/units/han/siege_tower.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/hero_liu_bang"
+    sprite="stretched:session/portraits/units/han/hero_liu_bang.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/hero_han/xin"
+    sprite="stretched:session/portraits/units/han/hero_han/xin.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/champion_cavalry_spearman"
+    sprite="stretched:session/portraits/units/han/champion_cavalry_spearman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/infantry_swordsman"
+    sprite="stretched:session/portraits/units/han/infantry_swordsman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/infantry_archer"
+    sprite="stretched:session/portraits/units/han/infantry_archer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/chariot"
+    sprite="stretched:session/portraits/units/han/chariot.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/ship_fishing"
+    sprite="stretched:session/portraits/units/han/ship_fishing.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/cavalry_archer"
+    sprite="stretched:session/portraits/units/han/cavalry_archer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/siege_mangonel_packed"
+    sprite="stretched:session/portraits/units/han/siege_mangonel_packed.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/han/hero_wei_qing"
+    sprite="stretched:session/portraits/units/han/hero_wei_qing.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/gaul/cavalry_swordsman"
+    sprite="stretched:session/portraits/units/gaul_cavalry_swordsman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/gaul/cavalry_javelineer"
+    sprite="stretched:session/portraits/units/gaul_cavalry_javelinist.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/gaul/champion_fanatic"
+    sprite="stretched:session/portraits/units/gaul_champion_fanatic.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/gaul/hero_viridomarus"
+    sprite="stretched:session/portraits/units/gaul_hero_viridomarus.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/gaul/infantry_spearman"
+    sprite="stretched:session/portraits/units/gaul_infantry_spearman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/gaul/champion_swordsman_carnyx"
+    sprite="stretched:session/portraits/units/gaul_champion_swordsman_carnyx.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/gaul/champion_infantry"
+    sprite="stretched:session/portraits/units/gaul_champion_infantry.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/gaul/champion_cavalry"
+    sprite="stretched:session/portraits/units/gaul_champion_cavalry.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/gaul/hero_vercingetorix"
+    sprite="stretched:session/portraits/units/gaul_hero_vercingetorix.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/gaul/infantry_javelineer"
+    sprite="stretched:session/portraits/units/gaul_infantry_javelinist.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/gaul/infantry_slinger"
+    sprite="stretched:session/portraits/units/gaul_infantry_slinger.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/gaul/infantry_swordsman"
+    sprite="stretched:session/portraits/units/gaul_infantry_swordsman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/gaul/hero_brennus"
+    sprite="stretched:session/portraits/units/gaul_hero_brennus.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/hele/support_healer"
+    sprite="stretched:session/portraits/units/hele_support_healer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/hele/siege_lithobolos"
+    sprite="stretched:session/portraits/units/hele_siege_lithobolos.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/hele/support_trader"
+    sprite="stretched:session/portraits/units/hele_support_trader.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/hele/siege_oxybeles_packed"
+    sprite="stretched:session/portraits/units/hele_siege_oxybeles_packed.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/hele/ship_merchant"
+    sprite="stretched:session/portraits/units/hele_ship_merchant.png"
+    size="25 25"
+  />
+  <icon
+    name="units/hele/support_female_citizen"
+    sprite="stretched:session/portraits/units/hele_support_female_citizen.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/hele/siege_lithobolos_packed"
+    sprite="stretched:session/portraits/units/hele_siege_lithobolos_packed.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/hele/ship_bireme"
+    sprite="stretched:session/portraits/units/hele_ship_bireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/hele/siege_oxybeles"
+    sprite="stretched:session/portraits/units/hele_siege_oxybeles.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/hele/champion_infantry_polis"
+    sprite="stretched:session/portraits/units/hele_champion_infantry_polis.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/hele/ship_trireme"
+    sprite="stretched:session/portraits/units/hele_ship_trireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/hele/siege_tower"
+    sprite="stretched:session/portraits/units/hele_siege_tower.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/hele/champion_ranged_polis"
+    sprite="stretched:session/portraits/units/hele_champion_ranged_polis.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/hele/infantry_archer"
+    sprite="stretched:session/portraits/units/hele_infantry_archer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/hele/ship_fishing"
+    sprite="stretched:session/portraits/units/hele_ship_fishing.png"
+    size="25 25"
+  />
+  <icon
+    name="units/mace/tarentine_cavalry_e"
+    sprite="stretched:session/portraits/units/hele_tarentine_cavalry_e.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/support_healer"
+    sprite="stretched:session/portraits/units/hele_support_healer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/siege_lithobolos"
+    sprite="stretched:session/portraits/units/hele_siege_lithobolos.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/support_trader"
+    sprite="stretched:session/portraits/units/hele_support_trader.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/siege_oxybeles_packed"
+    sprite="stretched:session/portraits/units/hele_siege_oxybeles_packed.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/ship_merchant"
+    sprite="stretched:session/portraits/units/hele_ship_merchant.png"
+    size="25 25"
+  />
+  <icon
+    name="units/mace/support_female_citizen"
+    sprite="stretched:session/portraits/units/hele_support_female_citizen.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/siege_lithobolos_packed"
+    sprite="stretched:session/portraits/units/hele_siege_lithobolos_packed.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/ship_bireme"
+    sprite="stretched:session/portraits/units/hele_ship_bireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/siege_oxybeles"
+    sprite="stretched:session/portraits/units/hele_siege_oxybeles.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/champion_infantry_polis"
+    sprite="stretched:session/portraits/units/hele_champion_infantry_polis.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/ship_trireme"
+    sprite="stretched:session/portraits/units/hele_ship_trireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/siege_tower"
+    sprite="stretched:session/portraits/units/hele_siege_tower.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/champion_ranged_polis"
+    sprite="stretched:session/portraits/units/hele_champion_ranged_polis.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/infantry_archer"
+    sprite="stretched:session/portraits/units/hele_infantry_archer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/ship_fishing"
+    sprite="stretched:session/portraits/units/hele_ship_fishing.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/tarentine_cavalry_e"
+    sprite="stretched:session/portraits/units/hele_tarentine_cavalry_e.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/mace/tarentine_cavalry_e"
+    sprite="stretched:session/portraits/units/hele_tarentine_cavalry_e.png"
+    size="25 25"
+  />
+  <icon
+    name="units/spart/support_healer"
+    sprite="stretched:session/portraits/units/hele_support_healer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/siege_lithobolos"
+    sprite="stretched:session/portraits/units/hele_siege_lithobolos.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/support_trader"
+    sprite="stretched:session/portraits/units/hele_support_trader.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/siege_oxybeles_packed"
+    sprite="stretched:session/portraits/units/hele_siege_oxybeles_packed.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/ship_merchant"
+    sprite="stretched:session/portraits/units/hele_ship_merchant.png"
+    size="25 25"
+  />
+  <icon
+    name="units/spart/support_female_citizen"
+    sprite="stretched:session/portraits/units/hele_support_female_citizen.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/siege_lithobolos_packed"
+    sprite="stretched:session/portraits/units/hele_siege_lithobolos_packed.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/ship_bireme"
+    sprite="stretched:session/portraits/units/hele_ship_bireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/siege_oxybeles"
+    sprite="stretched:session/portraits/units/hele_siege_oxybeles.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/champion_infantry_polis"
+    sprite="stretched:session/portraits/units/hele_champion_infantry_polis.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/ship_trireme"
+    sprite="stretched:session/portraits/units/hele_ship_trireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/siege_tower"
+    sprite="stretched:session/portraits/units/hele_siege_tower.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/champion_ranged_polis"
+    sprite="stretched:session/portraits/units/hele_champion_ranged_polis.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/infantry_archer"
+    sprite="stretched:session/portraits/units/hele_infantry_archer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/ship_fishing"
+    sprite="stretched:session/portraits/units/hele_ship_fishing.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/spart/tarentine_cavalry_e"
+    sprite="stretched:session/portraits/units/hele_tarentine_cavalry_e.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/support_healer"
+    sprite="stretched:session/portraits/units/hele_support_healer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/siege_lithobolos"
+    sprite="stretched:session/portraits/units/hele_siege_lithobolos.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/support_trader"
+    sprite="stretched:session/portraits/units/hele_support_trader.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/siege_oxybeles_packed"
+    sprite="stretched:session/portraits/units/hele_siege_oxybeles_packed.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/ship_merchant"
+    sprite="stretched:session/portraits/units/hele_ship_merchant.png"
+    size="25 25"
+  />
+  <icon
+    name="units/athen/support_female_citizen"
+    sprite="stretched:session/portraits/units/hele_support_female_citizen.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/siege_lithobolos_packed"
+    sprite="stretched:session/portraits/units/hele_siege_lithobolos_packed.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/ship_bireme"
+    sprite="stretched:session/portraits/units/hele_ship_bireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/siege_oxybeles"
+    sprite="stretched:session/portraits/units/hele_siege_oxybeles.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/champion_infantry_polis"
+    sprite="stretched:session/portraits/units/hele_champion_infantry_polis.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/ship_trireme"
+    sprite="stretched:session/portraits/units/hele_ship_trireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/siege_tower"
+    sprite="stretched:session/portraits/units/hele_siege_tower.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/champion_ranged_polis"
+    sprite="stretched:session/portraits/units/hele_champion_ranged_polis.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/infantry_archer"
+    sprite="stretched:session/portraits/units/hele_infantry_archer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/ship_fishing"
+    sprite="stretched:session/portraits/units/hele_ship_fishing.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/athen/tarentine_cavalry_e"
+    sprite="stretched:session/portraits/units/hele_tarentine_cavalry_e.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/pirates/warship_light"
+    sprite="stretched:session/portraits/units/pirates_warship_light.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/pers/hero_xerxes"
+    sprite="stretched:session/portraits/units/pers_hero_xerxes.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/pers/support_healer"
+    sprite="stretched:session/portraits/units/pers_support_healer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/pers/cavalry_javelineer"
+    sprite="stretched:session/portraits/units/pers_cavalry_javelinist.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/pers/support_trader"
+    sprite="stretched:session/portraits/units/pers_support_trader.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/pers/ship_merchant"
+    sprite="stretched:session/portraits/units/pers_ship_merchant.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/pers/support_female_citizen"
+    sprite="stretched:session/portraits/units/pers_support_female_citizen.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/pers/kardakes"
+    sprite="stretched:session/portraits/units/pers_kardakes.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/pers/infantry_spearman"
+    sprite="stretched:session/portraits/units/pers_infantry_spearman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/pers/arstibara"
+    sprite="stretched:session/portraits/units/pers_arstibara.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/pers/cavalry_spearman"
+    sprite="stretched:session/portraits/units/pers_cavalry_spearman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/pers/ship_bireme"
+    sprite="stretched:session/portraits/units/pers_ship_bireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/pers/champion_elephant"
+    sprite="stretched:session/portraits/units/pers_champion_elephant.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/pers/champion_infantry"
+    sprite="stretched:session/portraits/units/pers_champion_infantry.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/pers/hero_darius"
+    sprite="stretched:session/portraits/units/pers_hero_darius.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/pers/hero_cyrus"
+    sprite="stretched:session/portraits/units/pers_hero_cyrus.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/pers/chariot_archer"
+    sprite="stretched:session/portraits/units/pers_chariot_archer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/pers/siege_ram"
+    sprite="stretched:session/portraits/units/pers_siege_ram.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/pers/kardakes_skirmisher"
+    sprite="stretched:session/portraits/units/pers_kardakes_skirmisher.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/pers/champion_cavalry"
+    sprite="stretched:session/portraits/units/pers_champion_cavalry.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/pers/champion_infantry_archer"
+    sprite="stretched:session/portraits/units/pers_champion_infantry_archer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/pers/cavalry_axeman"
+    sprite="stretched:session/portraits/units/pers_cavalry_axeman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/pers/ship_trireme"
+    sprite="stretched:session/portraits/units/pers_ship_trireme.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/pers/champion_cavalry_archer"
+    sprite="stretched:session/portraits/units/pers_champion_cavalry_archer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/ptol/cavalry_archer"
+    sprite="stretched:session/portraits/units/ptol_cavalry_archer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/pers/infantry_javelineer"
+    sprite="stretched:session/portraits/units/pers_infantry_javelinist.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/pers/infantry_archer"
+    sprite="stretched:session/portraits/units/pers_infantry_archer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/pers/ship_fishing"
+    sprite="stretched:session/portraits/units/pers_ship_fishing.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/pers/cavalry_archer"
+    sprite="stretched:session/portraits/units/pers_cavalry_archer.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/brit/cavalry_swordsman"
+    sprite="stretched:session/portraits/units/brit_cavalry_swordsman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/brit/wolfhound"
+    sprite="stretched:session/portraits/units/brit_wolfhound.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/brit/champion_javelineer"
+    sprite="stretched:session/portraits/units/brit_champion_javelinist.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/brit/hero_caratacos"
+    sprite="stretched:session/portraits/units/brit_hero_caratacos.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/brit/cavalry_javelineer"
+    sprite="stretched:session/portraits/units/brit_cavalry_javelinist.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/brit/hero_cunobelin"
+    sprite="stretched:session/portraits/units/brit_hero_cunobelin.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/brit/infantry_spearman"
+    sprite="stretched:session/portraits/units/brit_infantry_spearman.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/brit/champion_infantry"
+    sprite="stretched:session/portraits/units/brit_champion_infantry.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/brit/hero_boudicca"
+    sprite="stretched:session/portraits/units/brit_hero_boudicca.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/brit/war_dog"
+    sprite="stretched:session/portraits/units/brit_war_dog.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/brit/champion_chariot"
+    sprite="stretched:session/portraits/units/brit_champion_chariot.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/brit/infantry_javelineer"
+    sprite="stretched:session/portraits/units/brit_infantry_javelinist.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/global/slave"
+    sprite="stretched:session/portraits/units/global/slave.png"
+    size="25 25"
+  />
+
+  <icon
+    name="units/global/mustang"
+    sprite="stretched:session/portraits/units/global/mustang.png"
+    size="25 25"
+  />-->
+</setup>
